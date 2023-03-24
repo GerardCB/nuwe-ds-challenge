@@ -18,5 +18,5 @@ Repository for the Nuwe's "Product manager - Data science challenge manager" pos
 | Model Name          | raw     | cleaned | balanced |
 |---------------------|---------|---------|----------|
 | baseline            | 0.8579  | 0.8568 | 0.7372 |
-| baseline_fine-tuned | ...| ...  | ... |
+| baseline_fine-tuned | 0.8646| ...  | ... |
 | ...                 | ...     | ...     | ...      |
