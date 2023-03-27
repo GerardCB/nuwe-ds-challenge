@@ -22,11 +22,11 @@ Binary Cross Entropy Loss is the standard loss for binary classification problem
 | Baseline            | 0.8950 | 0.8857 | 0.7186 |
 | Baseline fine-tuned | 0.9063 | ...  | 0.7206 |
 | FT Transformer      | 0.9009 | 0.8886 | 0.7211 |
-| FT Transformer fine-tuned | 0.9137 | ... | ... |
+| FT Transformer fine-tuned | **0.9137** | ... | ... |
 
 ### models - datasets (trained on [Smoothed F1 Score Loss](https://www.kaggle.com/code/rejpalcz/best-loss-function-for-f1-score-metric/notebook))
 
-Smoothed F1 Score Loss is a continuous variation of F1 score that allows probabilistic predicitions. It is not commonly used, but theoretically it is more aligned to the evaluation F1 score than BCE. The idea behind trying this loss was to have models better prepared for 
+Smoothed F1 Score Loss is a continuous variation of F1 score that allows probabilistic predicitions. It is not commonly used as it might not have ideal mathematical properties, but theoretically it is more aligned to the evaluation F1 score than BCE.
 
 | Model Name          | raw    | cleaned | balanced |
 |---------------------|--------|---------|----------|
@@ -34,6 +34,7 @@ Smoothed F1 Score Loss is a continuous variation of F1 score that allows probabi
 | Baseline fine-tuned | 0.8646 | ...  | ... |
 | FT Transformer      | 0.8036 | 0.8055 | 0.7473 |
 
+The best model from the ones trained is the finetuned version of the FT Tansformer using BCE Loss on the raw dataset. Its test predictions can be accessed [here](./data/ftt_model_finetuned_2_raw_predictions.json).
 
 * The baseline models were initilised using a random configuration.
 * All fine-tuning was made using Weights & Biases (W&B) sweeps.
