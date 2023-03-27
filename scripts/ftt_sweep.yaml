@@ -1,0 +1,26 @@
+name: supply_chain_sweep
+method: bayes
+metric:
+  name: Validation F1
+  goal: maximize
+parameters:
+  num_epochs:
+    values: [20,30,40,50,60,70,80,90,100]
+  learning_rate:
+    min: 0.0001
+    max: 0.01
+  d_model:
+    values: [16, 32, 64, 128]
+  dim_ff:
+    values: [32, 64, 128, 256, 512]
+  depth:
+    values: [1, 2, 3, 4, 5]
+  heads:
+    values: [1,2,4,8]
+  attn_dropout:
+    min: 0.
+    max: 0.5
+  weight_decay:
+    min: 0.00001
+    max: 0.001
+program: FTT_model_training_wandb.py
