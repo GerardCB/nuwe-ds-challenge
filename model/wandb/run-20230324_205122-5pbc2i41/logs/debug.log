@@ -1,0 +1,28 @@
+2023-03-24 20:51:22,916 INFO    MainThread:5557 [wandb_setup.py:_flush():76] Configure stats pid to 5557
+2023-03-24 20:51:22,916 INFO    MainThread:5557 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/.config/wandb/settings
+2023-03-24 20:51:22,916 INFO    MainThread:5557 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/settings
+2023-03-24 20:51:22,917 INFO    MainThread:5557 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'gerardcb', 'project': 'nuwe-model', 'sweep_id': '8zo4muuo', 'root_dir': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model', 'run_id': '5pbc2i41', 'sweep_param_path': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/sweep-8zo4muuo/config-5pbc2i41.yaml'}
+2023-03-24 20:51:22,917 INFO    MainThread:5557 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-24 20:51:22,917 INFO    MainThread:5557 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'model/baseline_model_training_wandb.py', 'program': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/baseline_model_training_wandb.py'}
+2023-03-24 20:51:22,917 INFO    MainThread:5557 [wandb_init.py:_log_setup():506] Logging user logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_205122-5pbc2i41/logs/debug.log
+2023-03-24 20:51:22,917 INFO    MainThread:5557 [wandb_init.py:_log_setup():507] Logging internal logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_205122-5pbc2i41/logs/debug-internal.log
+2023-03-24 20:51:22,918 INFO    MainThread:5557 [wandb_init.py:init():546] calling init triggers
+2023-03-24 20:51:22,918 INFO    MainThread:5557 [wandb_init.py:init():552] wandb.init called with sweep_config: {'dropout': 0.20459342126695496, 'hidden_size': 256, 'learning_rate': 0.0015252854557788005, 'num_epochs': 30, 'num_layers': 3, 'weight_decay': 0.0007602751383811382}
+config: {}
+2023-03-24 20:51:22,918 INFO    MainThread:5557 [wandb_init.py:init():602] starting backend
+2023-03-24 20:51:22,918 INFO    MainThread:5557 [wandb_init.py:init():606] setting up manager
+2023-03-24 20:51:22,931 INFO    MainThread:5557 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-24 20:51:22,943 INFO    MainThread:5557 [wandb_init.py:init():613] backend started and connected
+2023-03-24 20:51:22,956 INFO    MainThread:5557 [wandb_run.py:_config_callback():1251] config_cb None None {'dropout': 0.20459342126695496, 'hidden_size': 256, 'learning_rate': 0.0015252854557788005, 'num_epochs': 30, 'num_layers': 3, 'weight_decay': 0.0007602751383811382}
+2023-03-24 20:51:22,958 INFO    MainThread:5557 [wandb_init.py:init():701] updated telemetry
+2023-03-24 20:51:22,972 INFO    MainThread:5557 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-24 20:51:23,446 INFO    MainThread:5557 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-24 20:51:23,539 INFO    MainThread:5557 [wandb_run.py:_on_init():2142] got version response 
+2023-03-24 20:51:23,539 INFO    MainThread:5557 [wandb_init.py:init():789] starting run threads in backend
+2023-03-24 20:51:29,973 INFO    MainThread:5557 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-24 20:51:29,974 INFO    MainThread:5557 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-24 20:51:29,974 INFO    MainThread:5557 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-24 20:51:29,974 INFO    MainThread:5557 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-24 20:51:29,976 INFO    MainThread:5557 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-24 20:51:29,978 INFO    MainThread:5557 [wandb_run.py:_config_callback():1251] config_cb None None {'batch_size': 32}
+2023-03-24 20:53:51,506 WARNING MsgRouterThr:5557 [router.py:message_loop():77] message_loop has been closed

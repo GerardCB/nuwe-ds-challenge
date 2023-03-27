@@ -1,0 +1,28 @@
+2023-03-27 14:22:40,356 INFO    MainThread:8212 [wandb_setup.py:_flush():76] Configure stats pid to 8212
+2023-03-27 14:22:40,356 INFO    MainThread:8212 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/.config/wandb/settings
+2023-03-27 14:22:40,356 INFO    MainThread:8212 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/settings
+2023-03-27 14:22:40,356 INFO    MainThread:8212 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'gerardcb', 'project': 'nuwe-model', 'sweep_id': 'qcb9g13v', 'root_dir': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model', 'run_id': '7wdsvi3o', 'sweep_param_path': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/sweep-qcb9g13v/config-7wdsvi3o.yaml'}
+2023-03-27 14:22:40,356 INFO    MainThread:8212 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-27 14:22:40,357 INFO    MainThread:8212 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'model/FTT_model_training_wandb.py', 'program': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/FTT_model_training_wandb.py'}
+2023-03-27 14:22:40,357 INFO    MainThread:8212 [wandb_init.py:_log_setup():506] Logging user logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_142240-7wdsvi3o/logs/debug.log
+2023-03-27 14:22:40,357 INFO    MainThread:8212 [wandb_init.py:_log_setup():507] Logging internal logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_142240-7wdsvi3o/logs/debug-internal.log
+2023-03-27 14:22:40,357 INFO    MainThread:8212 [wandb_init.py:init():546] calling init triggers
+2023-03-27 14:22:40,358 INFO    MainThread:8212 [wandb_init.py:init():552] wandb.init called with sweep_config: {'attn_dropout': 0.01496100817067969, 'd_model': 128, 'depth': 3, 'dim_ff': 128, 'heads': 8, 'learning_rate': 0.00756724701047631, 'num_epochs': 70, 'weight_decay': 0.00031788907222274094}
+config: {}
+2023-03-27 14:22:40,358 INFO    MainThread:8212 [wandb_init.py:init():602] starting backend
+2023-03-27 14:22:40,358 INFO    MainThread:8212 [wandb_init.py:init():606] setting up manager
+2023-03-27 14:22:40,367 INFO    MainThread:8212 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-27 14:22:40,378 INFO    MainThread:8212 [wandb_init.py:init():613] backend started and connected
+2023-03-27 14:22:40,389 INFO    MainThread:8212 [wandb_run.py:_config_callback():1251] config_cb None None {'attn_dropout': 0.01496100817067969, 'd_model': 128, 'depth': 3, 'dim_ff': 128, 'heads': 8, 'learning_rate': 0.00756724701047631, 'num_epochs': 70, 'weight_decay': 0.00031788907222274094}
+2023-03-27 14:22:40,390 INFO    MainThread:8212 [wandb_init.py:init():701] updated telemetry
+2023-03-27 14:22:40,399 INFO    MainThread:8212 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-27 14:22:40,826 INFO    MainThread:8212 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-27 14:22:40,908 INFO    MainThread:8212 [wandb_run.py:_on_init():2142] got version response 
+2023-03-27 14:22:40,908 INFO    MainThread:8212 [wandb_init.py:init():789] starting run threads in backend
+2023-03-27 14:22:44,314 INFO    MainThread:8212 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-27 14:22:44,314 INFO    MainThread:8212 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-27 14:22:44,315 INFO    MainThread:8212 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-27 14:22:44,315 INFO    MainThread:8212 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-27 14:22:44,316 INFO    MainThread:8212 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-27 14:22:44,318 INFO    MainThread:8212 [wandb_run.py:_config_callback():1251] config_cb None None {'batch_size': 32}
+2023-03-27 14:31:03,408 WARNING MsgRouterThr:8212 [router.py:message_loop():77] message_loop has been closed

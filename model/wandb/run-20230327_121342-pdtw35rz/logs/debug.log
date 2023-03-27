@@ -1,0 +1,28 @@
+2023-03-27 12:13:42,790 INFO    MainThread:40700 [wandb_setup.py:_flush():76] Configure stats pid to 40700
+2023-03-27 12:13:42,790 INFO    MainThread:40700 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/.config/wandb/settings
+2023-03-27 12:13:42,790 INFO    MainThread:40700 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/settings
+2023-03-27 12:13:42,790 INFO    MainThread:40700 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'gerardcb', 'project': 'nuwe-model', 'sweep_id': 'qcb9g13v', 'root_dir': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model', 'run_id': 'pdtw35rz', 'sweep_param_path': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/sweep-qcb9g13v/config-pdtw35rz.yaml'}
+2023-03-27 12:13:42,791 INFO    MainThread:40700 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-27 12:13:42,791 INFO    MainThread:40700 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'model/FTT_model_training_wandb.py', 'program': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/FTT_model_training_wandb.py'}
+2023-03-27 12:13:42,791 INFO    MainThread:40700 [wandb_init.py:_log_setup():506] Logging user logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_121342-pdtw35rz/logs/debug.log
+2023-03-27 12:13:42,791 INFO    MainThread:40700 [wandb_init.py:_log_setup():507] Logging internal logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_121342-pdtw35rz/logs/debug-internal.log
+2023-03-27 12:13:42,791 INFO    MainThread:40700 [wandb_init.py:init():546] calling init triggers
+2023-03-27 12:13:42,792 INFO    MainThread:40700 [wandb_init.py:init():552] wandb.init called with sweep_config: {'attn_dropout': 0.06727068150433102, 'd_model': 32, 'depth': 1, 'dim_ff': 128, 'heads': 4, 'learning_rate': 0.005909227419990608, 'num_epochs': 90, 'weight_decay': 1.5820500441067147e-05}
+config: {}
+2023-03-27 12:13:42,792 INFO    MainThread:40700 [wandb_init.py:init():602] starting backend
+2023-03-27 12:13:42,792 INFO    MainThread:40700 [wandb_init.py:init():606] setting up manager
+2023-03-27 12:13:42,803 INFO    MainThread:40700 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-27 12:13:42,811 INFO    MainThread:40700 [wandb_init.py:init():613] backend started and connected
+2023-03-27 12:13:42,819 INFO    MainThread:40700 [wandb_run.py:_config_callback():1251] config_cb None None {'attn_dropout': 0.06727068150433102, 'd_model': 32, 'depth': 1, 'dim_ff': 128, 'heads': 4, 'learning_rate': 0.005909227419990608, 'num_epochs': 90, 'weight_decay': 1.5820500441067147e-05}
+2023-03-27 12:13:42,821 INFO    MainThread:40700 [wandb_init.py:init():701] updated telemetry
+2023-03-27 12:13:42,829 INFO    MainThread:40700 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-27 12:13:43,212 INFO    MainThread:40700 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-27 12:13:43,300 INFO    MainThread:40700 [wandb_run.py:_on_init():2142] got version response 
+2023-03-27 12:13:43,300 INFO    MainThread:40700 [wandb_init.py:init():789] starting run threads in backend
+2023-03-27 12:13:46,544 INFO    MainThread:40700 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-27 12:13:46,544 INFO    MainThread:40700 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-27 12:13:46,544 INFO    MainThread:40700 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-27 12:13:46,545 INFO    MainThread:40700 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-27 12:13:46,545 INFO    MainThread:40700 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-27 12:13:46,547 INFO    MainThread:40700 [wandb_run.py:_config_callback():1251] config_cb None None {'batch_size': 32}
+2023-03-27 12:18:10,192 WARNING MsgRouterThr:40700 [router.py:message_loop():77] message_loop has been closed

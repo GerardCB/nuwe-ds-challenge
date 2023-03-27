@@ -1,0 +1,84 @@
+{
+    "os": "Linux-4.15.0-204-generic-x86_64-with-glibc2.27",
+    "python": "3.10.10",
+    "heartbeatAt": "2023-03-24T16:22:49.507122",
+    "startedAt": "2023-03-24T16:22:48.836690",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dropout=0.09362569749112357",
+        "--hidden_size=256",
+        "--learning_rate=0.0034462384465924535",
+        "--num_epochs=70",
+        "--num_layers=5",
+        "--weight_decay=0.000499032211278916"
+    ],
+    "state": "running",
+    "program": "/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/baseline_model_training_wandb.py",
+    "codePath": "model/baseline_model_training_wandb.py",
+    "git": {
+        "remote": null,
+        "commit": "a22e5a27f1acfc91cae588c47c2eb61a824cad0a"
+    },
+    "email": "gerardcalvo26@gmail.com",
+    "root": "/home/usuaris/veu/gerard.calvo.bartra/nuwe",
+    "host": "veue02",
+    "username": "gerard.calvo.bartra",
+    "executable": "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2294.608,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.608,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 39.07026672363281,
+        "used": 13.812397003173828
+    },
+    "memory": {
+        "total": 31.413291931152344
+    }
+}

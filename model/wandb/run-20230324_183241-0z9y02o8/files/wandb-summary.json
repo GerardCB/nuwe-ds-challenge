@@ -1,0 +1,1 @@
+{"Train Loss": 0.16419640520738588, "Epoch": 49, "_timestamp": 1679679264.744931, "_runtime": 102.98852896690369, "_step": 99, "Validation Accuracy": 0.9006410256410257, "Validation F1": 0.9232673267326732, "_wandb": {"runtime": 107}}

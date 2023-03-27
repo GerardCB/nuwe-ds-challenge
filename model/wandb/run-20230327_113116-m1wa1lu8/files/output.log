@@ -1,0 +1,39 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'learning_rate' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'num_epochs' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'weight_decay' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'depth' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'heads' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'attn_dropout' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'dim_ff' was locked by 'sweep' (ignored update).
+[34m[1mwandb[39m[22m: [33mWARNING[39m Config item 'd_model' was locked by 'sweep' (ignored update).
+Traceback (most recent call last):
+  File "/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/FTT_model_training_wandb.py", line 70, in <module>
+    model = FTTransformer(
+NameError: name 'FTTransformer' is not defined
+Creating dataset...
+Loading data from /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/../data/supply_chain_train_raw.csv
+Train batch 0:
+{'data': tensor([[-0.7544, -0.1733,  2.0600,  ...,  0.0000,  0.0000,  0.0000],
+        [-0.8029, -1.7908, -0.2530,  ...,  0.0000,  0.0000,  0.0000],
+        [ 0.4328,  0.4489, -0.2530,  ...,  0.0000,  0.0000,  0.0000],
+        ...,
+        [-0.7637,  1.0710,  1.2890,  ...,  0.0000,  0.0000,  0.0000],
+        [ 1.2454,  0.4489, -0.2530,  ...,  0.0000,  0.0000,  0.0000],
+        [ 1.3269, -0.7954,  2.0600,  ...,  0.0000,  0.0000,  1.0000]],
+       dtype=torch.float64), 'target': tensor([1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 0, 1, 1])}
+Validation batch 0:
+{'data': tensor([[-0.7021, -0.9862, -0.2985,  ...,  0.0000,  0.0000,  0.0000],
+        [-0.7690,  0.4015,  2.1085,  ...,  0.0000,  0.0000,  1.0000],
+        [-0.7355,  0.0231, -1.1008,  ...,  0.0000,  0.0000,  0.0000],
+        ...,
+        [-0.7259,  0.1492, -0.2985,  ...,  0.0000,  0.0000,  0.0000],
+        [ 0.4713,  0.5277,  2.1085,  ...,  0.0000,  0.0000,  0.0000],
+        [-0.7987, -0.2293,  0.5039,  ...,  0.0000,  0.0000,  0.0000]],
+       dtype=torch.float64), 'target': tensor([1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 0, 1, 1])}
+batch_data.shape: torch.Size([32, 38])
+Percentage of positive and negative samples in the training set:
+1    0.839094
+0    0.160906
+Name: Attrition_Flag, dtype: float64

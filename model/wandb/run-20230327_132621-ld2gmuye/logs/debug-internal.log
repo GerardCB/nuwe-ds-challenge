@@ -1,0 +1,1418 @@
+2023-03-27 13:26:21,041 INFO    StreamThr :28162 [internal.py:wandb_internal():87] W&B internal server running at pid: 28162, started at: 2023-03-27 13:26:21.040485
+2023-03-27 13:26:21,043 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status
+2023-03-27 13:26:21,054 INFO    WriterThread:28162 [datastore.py:open_for_write():85] open: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/run-ld2gmuye.wandb
+2023-03-27 13:26:21,056 DEBUG   SenderThread:28162 [sender.py:send():336] send: header
+2023-03-27 13:26:21,064 DEBUG   SenderThread:28162 [sender.py:send():336] send: run
+2023-03-27 13:26:21,484 INFO    SenderThread:28162 [dir_watcher.py:__init__():219] watching files in: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files
+2023-03-27 13:26:21,484 INFO    SenderThread:28162 [sender.py:_start_run_threads():1078] run started: ld2gmuye with start time 1679916381.045301
+2023-03-27 13:26:21,485 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:21,486 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:21,491 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: check_version
+2023-03-27 13:26:21,492 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: check_version
+2023-03-27 13:26:21,596 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: run_start
+2023-03-27 13:26:21,604 DEBUG   HandlerThread:28162 [system_info.py:__init__():31] System info init
+2023-03-27 13:26:21,604 DEBUG   HandlerThread:28162 [system_info.py:__init__():46] System info init done
+2023-03-27 13:26:21,604 INFO    HandlerThread:28162 [system_monitor.py:start():183] Starting system monitor
+2023-03-27 13:26:21,605 INFO    SystemMonitor:28162 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-27 13:26:21,605 INFO    HandlerThread:28162 [system_monitor.py:probe():204] Collecting system info
+2023-03-27 13:26:21,606 INFO    SystemMonitor:28162 [interfaces.py:start():187] Started cpu monitoring
+2023-03-27 13:26:21,607 INFO    SystemMonitor:28162 [interfaces.py:start():187] Started disk monitoring
+2023-03-27 13:26:21,608 INFO    SystemMonitor:28162 [interfaces.py:start():187] Started gpu monitoring
+2023-03-27 13:26:21,609 INFO    SystemMonitor:28162 [interfaces.py:start():187] Started memory monitoring
+2023-03-27 13:26:21,609 INFO    SystemMonitor:28162 [interfaces.py:start():187] Started network monitoring
+2023-03-27 13:26:21,648 DEBUG   HandlerThread:28162 [system_info.py:probe():195] Probing system
+2023-03-27 13:26:21,650 DEBUG   HandlerThread:28162 [system_info.py:_probe_git():180] Probing git
+2023-03-27 13:26:21,663 DEBUG   HandlerThread:28162 [system_info.py:_probe_git():188] Probing git done
+2023-03-27 13:26:21,663 DEBUG   HandlerThread:28162 [system_info.py:probe():240] Probing system done
+2023-03-27 13:26:21,663 DEBUG   HandlerThread:28162 [system_monitor.py:probe():213] {'os': 'Linux-4.15.0-162-generic-x86_64-with-glibc2.27', 'python': '3.10.10', 'heartbeatAt': '2023-03-27T11:26:21.648427', 'startedAt': '2023-03-27T11:26:21.014110', 'docker': None, 'cuda': '9.0.176.4', 'args': ('--attn_dropout=0.4875989616132197', '--d_model=16', '--depth=5', '--dim_ff=32', '--heads=2', '--learning_rate=0.005459899893624622', '--num_epochs=100', '--weight_decay=0.0007577820859043256'), 'state': 'running', 'program': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/FTT_model_training_wandb.py', 'codePath': 'model/FTT_model_training_wandb.py', 'git': {'remote': None, 'commit': 'e6eeffe0318508134170c6a020c02c1ba92260cc'}, 'email': 'gerardcalvo26@gmail.com', 'root': '/home/usuaris/veu/gerard.calvo.bartra/nuwe', 'host': 'veuc01', 'username': 'gerard.calvo.bartra', 'executable': '/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/bin/python', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 1.4723250000000008, 'min': 1200.0, 'max': 3100.0}, 'cpu_freq_per_core': [{'current': 3.099, 'min': 1200.0, 'max': 3100.0}, {'current': 1.203, 'min': 1200.0, 'max': 3100.0}, {'current': 1.204, 'min': 1200.0, 'max': 3100.0}, {'current': 1.203, 'min': 1200.0, 'max': 3100.0}, {'current': 1.204, 'min': 1200.0, 'max': 3100.0}, {'current': 1.202, 'min': 1200.0, 'max': 3100.0}, {'current': 1.202, 'min': 1200.0, 'max': 3100.0}, {'current': 1.203, 'min': 1200.0, 'max': 3100.0}, {'current': 1.203, 'min': 1200.0, 'max': 3100.0}, {'current': 1.203, 'min': 1200.0, 'max': 3100.0}, {'current': 1.567, 'min': 1200.0, 'max': 3100.0}, {'current': 1.84, 'min': 1200.0, 'max': 3100.0}, {'current': 1.203, 'min': 1200.0, 'max': 3100.0}, {'current': 1.302, 'min': 1200.0, 'max': 3100.0}, {'current': 1.204, 'min': 1200.0, 'max': 3100.0}, {'current': 1.203, 'min': 1200.0, 'max': 3100.0}, {'current': 1.201, 'min': 1200.0, 'max': 3100.0}, {'current': 3.014, 'min': 1200.0, 'max': 3100.0}, {'current': 1.204, 'min': 1200.0, 'max': 3100.0}, {'current': 1.202, 'min': 1200.0, 'max': 3100.0}, {'current': 3.068, 'min': 1200.0, 'max': 3100.0}, {'current': 1.201, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.201, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.201, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.201, 'min': 1200.0, 'max': 3100.0}, {'current': 1.505, 'min': 1200.0, 'max': 3100.0}, {'current': 1.814, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.3, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.201, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 2.527, 'min': 1200.0, 'max': 3100.0}, {'current': 1.2, 'min': 1200.0, 'max': 3100.0}, {'current': 1.201, 'min': 1200.0, 'max': 3100.0}], 'disk': {'total': 109.53332901000977, 'used': 23.64202880859375}, 'gpu': 'NVIDIA GeForce GTX TITAN X', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX TITAN X', 'memory_total': 12806127616}], 'memory': {'total': 251.79984283447266}}
+2023-03-27 13:26:21,663 INFO    HandlerThread:28162 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-27 13:26:21,663 INFO    HandlerThread:28162 [system_monitor.py:probe():217] Publishing system info
+2023-03-27 13:26:21,663 DEBUG   HandlerThread:28162 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-27 13:26:21,664 DEBUG   HandlerThread:28162 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-27 13:26:21,665 DEBUG   HandlerThread:28162 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-27 13:26:22,488 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_created():278] file/dir created: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/requirements.txt
+2023-03-27 13:26:22,488 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_created():278] file/dir created: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/conda-environment.yaml
+2023-03-27 13:26:22,489 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_created():278] file/dir created: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:24,749 DEBUG   HandlerThread:28162 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-27 13:26:24,752 INFO    HandlerThread:28162 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-27 13:26:24,759 DEBUG   SenderThread:28162 [sender.py:send():336] send: files
+2023-03-27 13:26:24,759 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-27 13:26:24,773 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:26:24,774 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:26:24,937 DEBUG   SenderThread:28162 [sender.py:send():336] send: telemetry
+2023-03-27 13:26:24,962 DEBUG   SenderThread:28162 [sender.py:send():336] send: config
+2023-03-27 13:26:25,358 INFO    wandb-upload_0:28162 [upload_job.py:push():138] Uploaded file /tmp/tmp0pin8o7vwandb/phif9obk-wandb-metadata.json
+2023-03-27 13:26:25,492 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/conda-environment.yaml
+2023-03-27 13:26:25,492 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_created():278] file/dir created: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:25,492 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_created():278] file/dir created: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-metadata.json
+2023-03-27 13:26:26,978 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:26:27,493 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:29,427 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:29,429 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:29,429 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:29,431 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:29,494 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:29,707 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:29,708 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:29,708 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:29,709 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:30,495 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:30,495 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_created():278] file/dir created: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:26:31,496 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:32,714 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:26:34,213 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:34,214 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:34,214 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:34,215 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:34,498 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:34,539 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:34,539 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:34,540 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:34,541 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:35,499 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:26:35,499 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:35,500 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:37,501 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:38,528 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:26:38,528 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:38,529 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:38,529 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:38,531 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:38,842 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:38,843 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:38,843 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:38,844 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:39,502 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:26:39,503 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:39,503 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:39,773 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:26:39,774 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:26:41,504 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:42,988 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:42,989 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:42,989 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:42,992 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:43,273 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:43,274 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:43,274 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:43,275 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:43,505 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:26:43,505 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:44,280 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:26:45,506 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:47,776 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:47,776 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:47,777 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:47,778 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:48,134 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:48,134 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:48,135 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:48,136 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:48,509 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:26:48,509 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:49,510 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:50,152 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:26:53,580 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:53,581 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:53,581 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:53,583 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:53,945 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:53,945 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:53,946 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:53,947 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:54,513 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:26:54,513 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:54,773 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:26:54,773 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:26:55,514 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:55,940 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:26:56,514 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/config.yaml
+2023-03-27 13:26:58,259 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:58,260 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:58,260 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:58,261 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:58,516 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:26:58,591 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:26:58,592 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:26:58,592 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:26:58,593 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:26:59,517 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:26:59,517 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:01,518 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:01,594 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:03,115 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:03,116 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:03,116 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:03,118 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:03,451 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:03,452 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:03,452 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:03,453 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:03,520 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:05,521 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:07,454 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:08,271 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:08,272 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:08,272 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:08,273 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:08,523 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:08,612 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:08,613 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:08,613 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:08,614 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:09,524 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:09,524 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:09,773 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:27:09,773 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:27:11,526 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:12,939 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:13,818 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:13,819 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:13,819 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:13,822 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:14,214 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:14,215 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:14,216 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:14,217 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:14,528 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:15,529 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:18,218 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:18,413 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:18,413 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:18,413 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:18,415 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:18,531 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:18,744 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:18,745 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:18,745 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:18,746 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:19,532 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:19,532 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:21,533 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:21,610 DEBUG   SystemMonitor:28162 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-27 13:27:21,611 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:27:23,059 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:23,060 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:23,060 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:23,061 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:23,402 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:23,403 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:23,404 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:23,404 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:23,405 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:23,535 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:24,773 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:27:24,774 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:27:25,536 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:28,364 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:28,366 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:28,366 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:28,367 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:28,539 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:28,890 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:28,891 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:28,891 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:28,892 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:28,893 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:29,540 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:29,540 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:31,541 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:33,190 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:33,191 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:33,191 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:33,192 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:33,520 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:33,521 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:33,521 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:33,522 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:33,542 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:34,523 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:35,544 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:38,112 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:38,113 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:38,113 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:38,115 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:38,518 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:38,518 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:38,519 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:38,520 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:38,546 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:39,547 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:39,773 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:27:39,773 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:27:39,941 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:43,513 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:43,515 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:43,515 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:43,518 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:43,550 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:43,853 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:43,854 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:43,854 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:43,856 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:44,550 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:45,551 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:45,856 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:48,049 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:48,049 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:48,049 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:48,050 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:48,397 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:48,398 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:48,398 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:48,399 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:48,553 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:49,554 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:51,400 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:51,612 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:27:53,074 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:53,075 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:53,075 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:53,076 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:53,408 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:53,409 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:53,409 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:53,410 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:53,557 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:27:53,557 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:27:54,774 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:27:54,775 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:27:55,558 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:27:57,168 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:27:58,759 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:58,760 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:58,761 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:58,762 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:59,155 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:27:59,155 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:27:59,156 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:27:59,157 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:27:59,561 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:01,563 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:03,158 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:03,627 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:03,628 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:03,628 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:03,630 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:03,981 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:03,982 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:03,982 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:03,983 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:04,565 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:05,566 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:08,984 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:09,384 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:09,384 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:09,385 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:09,386 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:09,569 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:09,720 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:09,721 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:09,721 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:09,723 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:09,774 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:28:09,774 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:28:10,569 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:11,570 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:14,155 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:14,156 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:14,156 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:14,156 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:14,157 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:14,553 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:14,554 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:14,555 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:14,556 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:14,572 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:15,573 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:19,556 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:19,748 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:19,749 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:19,749 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:19,751 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:20,123 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:20,124 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:20,125 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:20,126 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:20,576 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:21,577 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:21,613 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:28:24,614 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:24,774 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:28:24,774 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:28:25,465 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:25,465 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:25,466 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:25,468 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:25,580 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:25,842 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:25,842 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:25,843 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:25,844 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:26,581 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:27,582 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:29,845 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:30,322 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:30,323 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:30,323 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:30,325 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:30,584 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:30,668 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:30,669 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:30,669 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:30,670 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:31,585 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:31,585 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:33,586 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:35,083 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:35,083 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:35,084 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:35,084 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:35,085 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:35,588 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:35,606 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:35,607 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:35,608 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:35,610 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:36,589 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:37,589 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:39,774 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:28:39,775 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:28:40,037 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:40,038 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:40,038 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:40,039 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:40,460 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:40,460 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:40,461 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:40,461 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:40,462 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:40,592 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:41,592 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:44,721 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:44,722 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:44,722 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:44,723 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:45,065 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:45,067 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:45,067 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:45,068 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:45,595 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:45,595 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:46,069 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:49,328 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:49,329 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:49,329 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:49,331 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:49,598 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:49,702 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:49,703 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:49,703 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:49,704 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:50,599 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:51,599 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:51,614 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:28:51,615 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:54,226 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:54,226 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:54,227 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:54,228 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:54,572 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:54,572 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:54,573 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:54,574 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:54,603 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:28:54,774 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:28:54,774 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:28:55,604 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:28:56,943 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:28:59,205 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:59,205 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:59,206 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:59,207 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:59,587 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:28:59,588 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:28:59,588 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:28:59,590 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:28:59,607 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:01,609 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:02,591 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:04,501 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:04,502 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:04,502 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:04,504 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:04,611 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:04,852 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:04,853 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:04,853 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:04,854 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:05,612 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:05,612 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:07,613 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:07,855 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:09,166 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:09,167 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:09,167 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:09,168 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:09,515 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:09,516 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:09,516 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:09,517 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:09,615 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:09,775 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:29:09,775 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:29:11,616 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:12,942 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:14,560 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:14,561 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:14,562 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:14,563 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:14,618 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:14,954 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:14,955 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:14,955 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:14,956 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:15,619 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:15,620 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:17,621 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:17,957 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:19,486 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:19,487 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:19,487 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:19,488 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:19,622 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:19,985 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:19,986 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:19,986 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:19,988 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:20,623 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:21,615 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:29:21,623 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:23,616 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:24,506 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:24,506 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:24,507 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:24,508 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:24,626 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:24,774 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:29:24,775 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:29:24,885 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:24,946 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:24,946 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:24,947 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:25,627 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:25,627 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:27,628 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:28,948 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:29,471 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:29,472 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:29,472 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:29,473 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:29,630 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:29,862 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:29,863 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:29,864 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:29,865 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:30,631 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:31,632 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:34,866 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:34,870 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:34,871 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:34,871 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:34,872 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:35,223 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:35,224 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:35,224 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:35,225 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:35,635 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:37,636 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:39,771 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:39,772 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:39,772 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:39,773 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:39,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:29:39,778 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:29:39,945 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:40,259 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:40,261 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:40,261 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:40,262 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:40,638 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:41,639 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:44,580 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:44,581 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:44,581 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:44,582 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:44,641 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:44,943 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:44,944 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:44,945 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:44,945 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:44,946 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:45,642 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:45,642 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:47,644 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:49,705 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:49,706 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:49,706 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:49,707 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:50,130 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:50,131 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:50,131 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:50,132 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:50,133 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:50,646 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:51,617 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:29:51,647 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:29:54,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:29:54,779 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:29:55,621 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:29:55,663 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:55,665 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:55,665 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:55,666 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:56,048 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:29:56,049 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:29:56,049 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:29:56,050 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:29:56,650 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:29:57,651 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:00,481 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:00,482 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:00,482 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:00,483 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:00,653 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:00,838 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:00,838 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:00,839 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:00,840 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:00,841 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:01,654 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:01,654 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:03,655 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:05,297 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:05,298 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:05,298 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:05,299 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:05,657 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:05,666 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:05,667 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:05,667 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:05,669 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:06,657 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:06,670 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:07,658 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:09,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:30:09,779 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:30:10,515 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:10,516 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:10,517 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:10,518 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:10,661 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:10,847 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:10,848 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:10,849 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:10,850 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:11,661 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:11,661 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:11,850 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:13,663 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:15,242 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:15,243 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:15,243 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:15,244 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:15,600 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:15,601 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:15,601 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:15,603 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:15,664 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:17,603 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:17,665 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:20,088 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:20,089 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:20,089 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:20,090 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:20,449 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:20,450 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:20,450 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:20,451 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:20,667 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:21,619 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:30:21,668 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:22,620 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:24,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:30:24,779 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:30:25,131 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:25,133 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:25,133 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:25,134 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:25,485 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:25,487 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:25,487 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:25,488 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:25,671 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:27,673 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:28,489 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:30,233 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:30,233 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:30,234 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:30,235 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:30,590 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:30,591 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:30,591 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:30,593 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:30,680 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:31,681 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:33,593 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:35,972 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:35,973 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:35,973 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:35,975 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:36,366 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:36,367 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:36,367 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:36,369 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:36,684 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:37,685 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:39,369 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:39,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:30:39,778 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:30:41,468 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:41,469 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:41,469 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:41,471 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:41,688 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:41,827 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:41,828 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:41,828 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:41,829 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:42,688 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:43,689 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:44,830 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:46,185 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:46,186 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:46,186 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:46,187 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:46,546 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:46,547 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:46,547 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:46,548 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:46,691 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:47,692 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:50,549 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:51,341 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:51,342 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:51,342 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:51,343 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:51,619 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:30:51,695 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:51,699 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:51,699 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:51,700 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:51,701 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:52,695 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:53,696 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:30:54,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:30:54,779 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:30:55,950 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:30:56,367 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:56,369 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:56,369 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:56,370 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:56,684 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:30:56,685 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:30:56,685 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:30:56,686 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:30:56,698 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:30:57,699 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:01,063 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:01,063 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:01,064 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:01,064 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:01,065 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:01,419 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:01,421 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:01,421 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:01,422 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:01,702 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:03,704 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:05,727 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:05,727 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:05,728 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:05,729 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:06,081 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:06,081 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:06,082 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:06,082 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:06,083 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:06,706 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:07,707 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:09,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:31:09,779 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:31:11,023 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:11,025 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:11,025 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:11,026 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:11,475 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:11,476 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:11,476 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:11,477 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:11,478 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:11,710 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:13,711 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:15,742 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:15,743 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:15,743 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:15,745 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:16,134 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:16,135 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:16,135 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:16,136 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:16,713 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:17,137 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:17,714 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:20,416 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:20,417 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:20,417 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:20,418 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:20,716 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:20,820 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:20,821 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:20,822 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:20,823 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:21,620 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:31:21,717 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:21,717 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:22,621 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:24,778 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:31:24,779 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:31:25,591 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:25,593 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:25,593 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:25,594 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:25,720 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:25,971 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:25,972 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:25,972 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:25,973 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:26,721 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:27,722 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:27,974 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:31,215 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:31,216 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:31,216 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:31,217 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:31,609 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:31,610 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:31,610 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:31,611 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:31,724 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:33,612 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:33,726 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:36,977 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:36,978 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:36,978 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:36,980 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:37,366 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:37,367 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:37,368 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:37,369 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:37,728 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:39,370 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:39,730 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:39,779 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:31:39,779 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:31:42,015 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:42,017 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:42,017 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:42,019 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:42,327 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:42,328 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:42,329 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:42,330 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:42,732 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:43,733 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:45,331 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:47,197 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:47,198 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:47,198 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:47,200 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:47,564 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:47,565 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:47,565 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:47,566 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:47,736 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:49,737 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:50,567 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:51,621 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:31:52,263 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:52,263 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:52,264 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:52,265 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:52,614 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:52,615 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:52,615 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:52,617 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:52,739 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:53,740 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:31:54,779 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:31:54,780 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:31:55,947 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:31:57,119 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:57,121 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:57,121 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:57,122 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:57,435 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:31:57,436 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:31:57,436 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:31:57,437 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:31:57,743 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:31:59,744 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:01,438 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:02,044 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:02,045 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:02,045 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:02,046 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:02,433 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:02,434 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:02,434 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:02,436 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:02,747 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:03,748 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:07,437 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:07,707 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:07,708 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:07,708 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:07,709 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:07,751 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:08,100 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:08,101 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:08,101 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:08,102 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:08,751 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:09,752 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:09,781 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:32:09,782 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:32:12,754 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:12,754 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:12,755 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:12,755 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:12,756 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:13,105 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:13,106 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:13,107 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:13,108 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:13,756 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:13,757 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:15,758 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:17,401 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:17,401 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:17,401 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:17,402 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:17,760 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:17,769 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:17,769 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:17,770 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:17,770 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:17,771 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:18,760 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:19,761 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:21,623 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:32:22,358 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:22,360 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:22,360 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:22,361 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:22,763 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:22,898 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:22,898 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:22,899 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:22,899 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:22,900 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:23,764 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:23,764 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:24,786 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:32:24,787 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:32:27,396 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:27,397 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:27,398 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:27,399 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:27,709 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:27,710 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:27,710 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:27,712 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:27,767 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:28,712 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:29,768 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:32,060 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:32,061 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:32,061 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:32,062 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:32,410 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:32,411 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:32,412 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:32,413 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:32,770 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:33,771 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:34,413 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:36,688 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:36,689 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:36,689 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:36,690 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:36,773 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:37,040 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:37,041 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:37,041 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:37,043 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:37,774 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:37,774 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:39,775 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:39,786 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:32:39,786 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:32:39,949 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:41,357 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:41,358 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:41,359 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:41,360 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:41,711 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:41,712 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:41,712 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:41,714 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:41,776 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:43,778 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:45,715 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:45,998 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:45,998 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:45,999 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:46,000 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:46,356 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:46,357 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:46,357 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:46,358 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:46,780 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:47,781 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:50,794 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:50,795 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:50,795 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:50,796 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:50,797 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:51,147 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:51,148 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:51,148 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:51,150 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:51,623 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:32:51,784 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:51,784 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:53,785 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:32:54,786 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:32:54,787 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:32:55,527 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:55,529 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:55,529 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:55,530 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:55,787 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:55,838 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:32:55,838 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:32:55,839 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:32:55,840 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:32:55,840 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:32:56,788 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:32:57,789 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:00,074 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:00,075 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:00,075 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:00,076 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:00,429 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:00,430 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:00,430 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:00,431 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:00,792 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:01,432 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:01,793 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:04,673 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:04,673 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:04,674 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:04,675 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:04,795 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:05,021 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:05,022 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:05,022 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:05,024 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:05,796 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:05,796 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:07,024 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:07,797 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:09,232 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:09,233 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:09,233 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:09,234 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:09,664 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:09,664 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:09,665 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:09,666 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:09,786 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:33:09,786 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:33:09,799 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:11,800 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:12,945 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:14,512 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:14,513 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:14,513 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:14,516 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:14,803 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:14,848 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:14,849 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:14,849 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:14,852 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:15,804 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:15,804 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:18,853 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:19,189 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:19,190 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:19,190 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:19,191 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:19,540 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:19,541 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:19,542 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:19,543 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:19,807 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:21,625 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:33:21,808 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:23,897 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:23,898 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:23,899 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:23,899 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:23,901 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:24,400 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:24,402 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:24,402 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:24,404 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:24,786 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:33:24,787 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:33:24,810 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:25,811 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:28,948 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:29,676 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:29,677 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:29,677 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:29,678 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:29,815 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:30,082 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:30,083 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:30,083 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:30,084 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:30,815 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:31,816 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:34,085 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:35,143 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:35,143 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:35,144 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:35,145 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:35,548 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:35,549 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:35,549 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:35,551 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:35,819 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:37,820 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:39,553 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:39,787 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:33:39,788 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:33:40,987 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:40,988 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:40,988 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:40,989 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:41,386 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:41,387 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:41,388 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:41,389 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:41,823 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:41,823 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:43,824 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:45,390 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:46,363 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:46,364 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:46,364 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:46,367 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:46,721 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:46,723 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:46,723 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:46,724 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:46,826 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:47,827 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:50,725 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:51,109 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:51,110 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:51,110 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:51,111 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:51,458 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:51,459 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:51,459 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:51,460 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:51,626 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:33:51,830 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:51,830 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:53,831 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:33:54,787 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:33:54,788 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:33:55,935 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:33:55,975 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:55,976 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:55,977 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:55,978 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:56,437 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:33:56,438 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:33:56,438 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:33:56,439 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:33:56,834 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:33:57,835 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:00,787 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:00,787 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:00,788 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:00,789 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:00,837 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:01,137 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:01,137 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:01,138 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:01,138 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:01,139 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:01,838 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:01,838 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:03,839 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:05,423 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:05,424 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:05,424 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:05,426 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:05,772 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:05,774 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:05,774 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:05,775 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:05,841 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:06,776 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:07,842 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:09,787 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:34:09,788 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:34:10,091 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:10,092 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:10,093 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:10,094 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:10,400 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:10,401 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:10,401 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:10,402 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:10,845 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:11,845 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:12,403 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:14,852 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:14,852 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:14,853 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:14,854 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:15,235 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:15,236 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:15,236 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:15,237 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:15,848 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:15,848 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:17,849 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:18,238 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:20,396 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:20,398 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:20,398 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:20,399 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:20,787 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:20,788 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:20,788 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:20,789 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:20,852 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:21,627 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:34:21,853 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:23,629 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:24,788 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:34:24,788 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:34:25,755 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:25,756 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:25,757 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:25,758 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:25,855 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:26,068 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:26,069 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:26,069 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:26,070 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:26,856 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:27,857 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:29,071 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:30,405 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:30,406 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:30,406 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:30,407 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:30,756 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:30,757 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:30,757 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:30,759 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:30,859 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:31,860 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:34,760 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:35,292 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:35,293 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:35,293 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:35,294 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:35,677 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:35,678 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:35,678 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:35,680 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:35,863 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:37,864 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:39,789 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-27 13:34:39,790 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: stop_status
+2023-03-27 13:34:39,950 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:40,395 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:40,395 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:40,396 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:40,397 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:40,866 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:40,891 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:40,892 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:40,892 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:40,894 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:41,867 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:41,867 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:45,019 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:45,020 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:45,021 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:45,021 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:45,022 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:45,501 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-27 13:34:45,502 DEBUG   SenderThread:28162 [sender.py:send():336] send: history
+2023-03-27 13:34:45,503 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: summary_record
+2023-03-27 13:34:45,504 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:45,870 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:45,870 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:47,871 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:48,617 DEBUG   SenderThread:28162 [sender.py:send():336] send: exit
+2023-03-27 13:34:48,617 INFO    SenderThread:28162 [sender.py:send_exit():559] handling exit code: 0
+2023-03-27 13:34:48,618 INFO    SenderThread:28162 [sender.py:send_exit():561] handling runtime: 507
+2023-03-27 13:34:48,619 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:48,620 INFO    SenderThread:28162 [sender.py:send_exit():567] send defer
+2023-03-27 13:34:48,620 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,621 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-27 13:34:48,621 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,621 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-27 13:34:48,621 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 1
+2023-03-27 13:34:48,622 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,622 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-27 13:34:48,623 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,623 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-27 13:34:48,623 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 2
+2023-03-27 13:34:48,623 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,623 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-27 13:34:48,624 INFO    HandlerThread:28162 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-27 13:34:48,625 DEBUG   SystemMonitor:28162 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-27 13:34:48,625 DEBUG   SystemMonitor:28162 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-27 13:34:48,625 INFO    HandlerThread:28162 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-27 13:34:48,627 INFO    HandlerThread:28162 [interfaces.py:finish():199] Joined disk monitor
+2023-03-27 13:34:48,690 INFO    HandlerThread:28162 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-27 13:34:48,690 INFO    HandlerThread:28162 [interfaces.py:finish():199] Joined memory monitor
+2023-03-27 13:34:48,690 INFO    HandlerThread:28162 [interfaces.py:finish():199] Joined network monitor
+2023-03-27 13:34:48,691 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,691 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-27 13:34:48,692 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 3
+2023-03-27 13:34:48,692 DEBUG   SenderThread:28162 [sender.py:send():336] send: stats
+2023-03-27 13:34:48,692 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,693 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-27 13:34:48,694 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,694 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-27 13:34:48,694 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 4
+2023-03-27 13:34:48,694 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,694 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-27 13:34:48,695 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,695 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-27 13:34:48,695 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 5
+2023-03-27 13:34:48,695 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,696 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-27 13:34:48,696 DEBUG   SenderThread:28162 [sender.py:send():336] send: summary
+2023-03-27 13:34:48,697 INFO    SenderThread:28162 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-27 13:34:48,698 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,698 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-27 13:34:48,699 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 6
+2023-03-27 13:34:48,699 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,699 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-27 13:34:48,700 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,700 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-27 13:34:48,700 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 7
+2023-03-27 13:34:48,700 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: status_report
+2023-03-27 13:34:48,701 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:48,701 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-27 13:34:48,701 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:48,702 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-27 13:34:48,872 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:49,617 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-27 13:34:49,873 INFO    Thread-13 :28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:51,577 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 8
+2023-03-27 13:34:51,577 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: poll_exit
+2023-03-27 13:34:51,577 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:51,579 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-27 13:34:51,579 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:51,579 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-27 13:34:51,579 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 9
+2023-03-27 13:34:51,580 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:51,580 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-27 13:34:51,581 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:51,581 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-27 13:34:51,581 INFO    SenderThread:28162 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-27 13:34:51,875 INFO    SenderThread:28162 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:51,876 INFO    SenderThread:28162 [dir_watcher.py:finish():395] scan: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files
+2023-03-27 13:34:51,876 INFO    SenderThread:28162 [dir_watcher.py:finish():409] scan save: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/conda-environment.yaml conda-environment.yaml
+2023-03-27 13:34:51,877 INFO    SenderThread:28162 [dir_watcher.py:finish():409] scan save: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log output.log
+2023-03-27 13:34:51,883 INFO    SenderThread:28162 [dir_watcher.py:finish():409] scan save: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/requirements.txt requirements.txt
+2023-03-27 13:34:51,883 INFO    SenderThread:28162 [dir_watcher.py:finish():409] scan save: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-metadata.json wandb-metadata.json
+2023-03-27 13:34:51,884 INFO    SenderThread:28162 [dir_watcher.py:finish():409] scan save: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/config.yaml config.yaml
+2023-03-27 13:34:51,894 INFO    SenderThread:28162 [dir_watcher.py:finish():409] scan save: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json wandb-summary.json
+2023-03-27 13:34:51,895 INFO    SenderThread:28162 [dir_watcher.py:finish():409] scan save: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt best_model.pt
+2023-03-27 13:34:51,903 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 10
+2023-03-27 13:34:51,907 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:51,914 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-27 13:34:51,915 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:51,915 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-27 13:34:51,915 INFO    SenderThread:28162 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-27 13:34:52,449 INFO    wandb-upload_3:28162 [upload_job.py:push():138] Uploaded file /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/config.yaml
+2023-03-27 13:34:52,456 INFO    wandb-upload_2:28162 [upload_job.py:push():138] Uploaded file /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/requirements.txt
+2023-03-27 13:34:52,484 INFO    wandb-upload_0:28162 [upload_job.py:push():138] Uploaded file /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/conda-environment.yaml
+2023-03-27 13:34:52,484 INFO    wandb-upload_5:28162 [upload_job.py:push():138] Uploaded file /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/best_model.pt
+2023-03-27 13:34:52,525 INFO    wandb-upload_4:28162 [upload_job.py:push():138] Uploaded file /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/wandb-summary.json
+2023-03-27 13:34:52,593 INFO    wandb-upload_1:28162 [upload_job.py:push():138] Uploaded file /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/files/output.log
+2023-03-27 13:34:52,793 INFO    Thread-12 (_thread_body):28162 [sender.py:transition_state():587] send defer: 11
+2023-03-27 13:34:52,793 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:52,794 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-27 13:34:52,794 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:52,794 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-27 13:34:52,795 INFO    SenderThread:28162 [file_pusher.py:join():169] waiting for file pusher
+2023-03-27 13:34:52,795 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 12
+2023-03-27 13:34:52,795 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:52,795 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-27 13:34:52,796 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:52,796 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-27 13:34:53,264 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 13
+2023-03-27 13:34:53,264 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:53,265 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-27 13:34:53,265 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:53,265 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-27 13:34:53,265 INFO    SenderThread:28162 [sender.py:transition_state():587] send defer: 14
+2023-03-27 13:34:53,266 DEBUG   SenderThread:28162 [sender.py:send():336] send: final
+2023-03-27 13:34:53,266 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: defer
+2023-03-27 13:34:53,266 DEBUG   SenderThread:28162 [sender.py:send():336] send: footer
+2023-03-27 13:34:53,267 INFO    HandlerThread:28162 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-27 13:34:53,268 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: defer
+2023-03-27 13:34:53,268 INFO    SenderThread:28162 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-27 13:34:53,269 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-27 13:34:53,270 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: poll_exit
+2023-03-27 13:34:53,270 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: server_info
+2023-03-27 13:34:53,271 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-27 13:34:53,271 DEBUG   SenderThread:28162 [sender.py:send_request():363] send_request: server_info
+2023-03-27 13:34:53,271 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-27 13:34:53,597 INFO    MainThread:28162 [wandb_run.py:_footer_history_summary_info():3422] rendering history
+2023-03-27 13:34:53,598 INFO    MainThread:28162 [wandb_run.py:_footer_history_summary_info():3454] rendering summary
+2023-03-27 13:34:53,598 INFO    MainThread:28162 [wandb_run.py:_footer_sync_info():3380] logging synced files
+2023-03-27 13:34:53,599 DEBUG   HandlerThread:28162 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-27 13:34:53,599 INFO    HandlerThread:28162 [handler.py:finish():842] shutting down handler
+2023-03-27 13:34:54,271 INFO    WriterThread:28162 [datastore.py:close():298] close: /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230327_132621-ld2gmuye/run-ld2gmuye.wandb
+2023-03-27 13:34:54,596 INFO    SenderThread:28162 [sender.py:finish():1504] shutting down sender
+2023-03-27 13:34:54,597 INFO    SenderThread:28162 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-27 13:34:54,597 INFO    SenderThread:28162 [file_pusher.py:join():169] waiting for file pusher

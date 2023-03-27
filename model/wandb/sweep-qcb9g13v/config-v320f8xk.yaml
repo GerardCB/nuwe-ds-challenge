@@ -1,0 +1,18 @@
+wandb_version: 1
+
+attn_dropout:
+  value: 0.014931638826985838
+d_model:
+  value: 16
+depth:
+  value: 3
+dim_ff:
+  value: 128
+heads:
+  value: 4
+learning_rate:
+  value: 0.009813687635694932
+num_epochs:
+  value: 30
+weight_decay:
+  value: 0.0007438294131039666

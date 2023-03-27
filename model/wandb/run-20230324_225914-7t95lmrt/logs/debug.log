@@ -1,0 +1,28 @@
+2023-03-24 22:59:14,602 INFO    MainThread:8593 [wandb_setup.py:_flush():76] Configure stats pid to 8593
+2023-03-24 22:59:14,603 INFO    MainThread:8593 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/.config/wandb/settings
+2023-03-24 22:59:14,603 INFO    MainThread:8593 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/settings
+2023-03-24 22:59:14,604 INFO    MainThread:8593 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'gerardcb', 'project': 'nuwe-model', 'sweep_id': '9jqk2tt1', 'root_dir': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model', 'run_id': '7t95lmrt', 'sweep_param_path': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/sweep-9jqk2tt1/config-7t95lmrt.yaml'}
+2023-03-24 22:59:14,604 INFO    MainThread:8593 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-24 22:59:14,604 INFO    MainThread:8593 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'model/baseline_model_training_wandb.py', 'program': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/baseline_model_training_wandb.py'}
+2023-03-24 22:59:14,605 INFO    MainThread:8593 [wandb_init.py:_log_setup():506] Logging user logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_225914-7t95lmrt/logs/debug.log
+2023-03-24 22:59:14,605 INFO    MainThread:8593 [wandb_init.py:_log_setup():507] Logging internal logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_225914-7t95lmrt/logs/debug-internal.log
+2023-03-24 22:59:14,606 INFO    MainThread:8593 [wandb_init.py:init():546] calling init triggers
+2023-03-24 22:59:14,606 INFO    MainThread:8593 [wandb_init.py:init():552] wandb.init called with sweep_config: {'dropout': 0.07834290943701455, 'hidden_size': 64, 'learning_rate': 0.008159435648986139, 'num_epochs': 50, 'num_layers': 1, 'weight_decay': 7.497856775131857e-05}
+config: {}
+2023-03-24 22:59:14,607 INFO    MainThread:8593 [wandb_init.py:init():602] starting backend
+2023-03-24 22:59:14,607 INFO    MainThread:8593 [wandb_init.py:init():606] setting up manager
+2023-03-24 22:59:14,620 INFO    MainThread:8593 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-24 22:59:14,641 INFO    MainThread:8593 [wandb_init.py:init():613] backend started and connected
+2023-03-24 22:59:14,655 INFO    MainThread:8593 [wandb_run.py:_config_callback():1251] config_cb None None {'dropout': 0.07834290943701455, 'hidden_size': 64, 'learning_rate': 0.008159435648986139, 'num_epochs': 50, 'num_layers': 1, 'weight_decay': 7.497856775131857e-05}
+2023-03-24 22:59:14,656 INFO    MainThread:8593 [wandb_init.py:init():701] updated telemetry
+2023-03-24 22:59:14,671 INFO    MainThread:8593 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-24 22:59:15,098 INFO    MainThread:8593 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-24 22:59:15,221 INFO    MainThread:8593 [wandb_run.py:_on_init():2142] got version response 
+2023-03-24 22:59:15,221 INFO    MainThread:8593 [wandb_init.py:init():789] starting run threads in backend
+2023-03-24 22:59:21,466 INFO    MainThread:8593 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-24 22:59:21,467 INFO    MainThread:8593 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-24 22:59:21,467 INFO    MainThread:8593 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-24 22:59:21,467 INFO    MainThread:8593 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-24 22:59:21,468 INFO    MainThread:8593 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-24 22:59:21,470 INFO    MainThread:8593 [wandb_run.py:_config_callback():1251] config_cb None None {'batch_size': 32}
+2023-03-24 23:02:21,067 WARNING MsgRouterThr:8593 [router.py:message_loop():77] message_loop has been closed

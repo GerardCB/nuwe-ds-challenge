@@ -1,0 +1,1501 @@
+2023-03-24 17:01:00 INFO Running runs: []
+2023-03-24 17:01:00 INFO Agent received command: run
+2023-03-24 17:01:00 INFO Agent starting run with config:
+	dropout: 0.08961643839179248
+	hidden_size: 512
+	learning_rate: 0.005513993290194083
+	num_epochs: 50
+	num_layers: 3
+	weight_decay: 0.0005075541306565284
+2023-03-24 17:01:00 INFO About to run command: /usr/bin/env python  --dropout=0.08961643839179248 --hidden_size=512 --learning_rate=0.005513993290194083 --num_epochs=50 --num_layers=3 --weight_decay=0.0005075541306565284
+2023-03-24 17:01:05 INFO Running runs: ['4vv0abct']
+2023-03-24 17:01:05 INFO Cleaning up finished run: 4vv0abct
+2023-03-24 17:01:06 INFO Agent received command: run
+2023-03-24 17:01:06 INFO Agent starting run with config:
+	dropout: 0.5360619090570872
+	hidden_size: 32
+	learning_rate: 0.009898075000102063
+	num_epochs: 60
+	num_layers: 4
+	weight_decay: 0.0008810686793876827
+2023-03-24 17:01:06 INFO About to run command: /usr/bin/env python  --dropout=0.5360619090570872 --hidden_size=32 --learning_rate=0.009898075000102063 --num_epochs=60 --num_layers=4 --weight_decay=0.0008810686793876827
+2023-03-24 17:01:11 INFO Running runs: ['aybz4dfe']
+2023-03-24 17:01:11 INFO Cleaning up finished run: aybz4dfe
+2023-03-24 17:01:11 INFO Agent received command: run
+2023-03-24 17:01:11 INFO Agent starting run with config:
+	dropout: 0.183712769187688
+	hidden_size: 64
+	learning_rate: 0.007873032233494394
+	num_epochs: 80
+	num_layers: 3
+	weight_decay: 0.0003811573738198368
+2023-03-24 17:01:11 INFO About to run command: /usr/bin/env python  --dropout=0.183712769187688 --hidden_size=64 --learning_rate=0.007873032233494394 --num_epochs=80 --num_layers=3 --weight_decay=0.0003811573738198368
+2023-03-24 17:01:16 INFO Running runs: ['ivly9i9r']
+2023-03-24 17:01:16 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2023-03-24 17:01:16 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2023-03-24 17:08:59 INFO Running runs: []
+2023-03-24 17:09:00 INFO Agent received command: run
+2023-03-24 17:09:00 INFO Agent starting run with config:
+	dropout: 0.012925703593603722
+	hidden_size: 128
+	learning_rate: 0.007567264910049061
+	num_epochs: 30
+	num_layers: 3
+	weight_decay: 0.0008411985116088465
+2023-03-24 17:09:00 INFO About to run command: /usr/bin/env python  --dropout=0.012925703593603722 --hidden_size=128 --learning_rate=0.007567264910049061 --num_epochs=30 --num_layers=3 --weight_decay=0.0008411985116088465
+2023-03-24 17:09:58 INFO Running runs: []
+2023-03-24 17:09:58 INFO Agent received command: run
+2023-03-24 17:09:58 INFO Agent starting run with config:
+	dropout: 0.33377859438685853
+	hidden_size: 512
+	learning_rate: 0.0015735234724650192
+	num_epochs: 80
+	num_layers: 4
+	weight_decay: 0.0008021614650647673
+2023-03-24 17:09:59 INFO About to run command: "conda activate nuwe" "python3 baseline_model_training_wandb.py"
+2023-03-24 17:09:59 ERROR Exception while processing command: {'run_id': '5d5l1uyv', 'program': 'baseline_model_training_wandb.py', 'type': 'run', 'args': {'dropout': {'value': 0.33377859438685853}, 'hidden_size': {'value': 512}, 'learning_rate': {'value': 0.0015735234724650192}, 'num_epochs': {'value': 80}, 'num_layers': {'value': 4}, 'weight_decay': {'value': 0.0008021614650647673}}, 'runqueue_item_id': 'UnVuUXVldWVJdGVtOjI3NTI5MTkzMQ==', 'logs': ['expected_improvement: nan', 'predicted_value: 0.0', 'predicted_value_std_dev: nan', 'success_probability: 1.0', 'warnings: \nSweep has no valid samples of the metric.'], 'run_storage_id': 'UnVuOnYxOjVkNWwxdXl2Om51d2UtbW9kZWw6Z2VyYXJkY2I='}
+Traceback (most recent call last):
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 365, in _process_command
+    result = self._command_run(command)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 481, in _command_run
+    proc = AgentProcess(command=command_list, env=env)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 46, in __init__
+    self._popen = subprocess.Popen(command, env=env, **kwargs)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda activate nuwe'
+2023-03-24 17:10:04 INFO Agent received command: run
+2023-03-24 17:10:04 INFO Agent starting run with config:
+	dropout: 0.3044819814406145
+	hidden_size: 128
+	learning_rate: 0.002309715761984227
+	num_epochs: 50
+	num_layers: 4
+	weight_decay: 0.00012955653113675433
+2023-03-24 17:10:04 INFO About to run command: "conda activate nuwe" "python3 baseline_model_training_wandb.py"
+2023-03-24 17:10:04 ERROR Exception while processing command: {'run_id': '5wcl9jps', 'program': 'baseline_model_training_wandb.py', 'type': 'run', 'args': {'dropout': {'value': 0.3044819814406145}, 'hidden_size': {'value': 128}, 'learning_rate': {'value': 0.002309715761984227}, 'num_epochs': {'value': 50}, 'num_layers': {'value': 4}, 'weight_decay': {'value': 0.00012955653113675433}}, 'runqueue_item_id': 'UnVuUXVldWVJdGVtOjI3NTI5MTk1Ng==', 'logs': ['expected_improvement: nan', 'predicted_value: 0.0', 'predicted_value_std_dev: nan', 'success_probability: 1.0', 'warnings: \nSweep has no valid samples of the metric.'], 'run_storage_id': 'UnVuOnYxOjV3Y2w5anBzOm51d2UtbW9kZWw6Z2VyYXJkY2I='}
+Traceback (most recent call last):
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 365, in _process_command
+    result = self._command_run(command)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 481, in _command_run
+    proc = AgentProcess(command=command_list, env=env)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 46, in __init__
+    self._popen = subprocess.Popen(command, env=env, **kwargs)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda activate nuwe'
+2023-03-24 17:10:33 INFO Running runs: []
+2023-03-24 17:10:33 INFO Agent received command: run
+2023-03-24 17:10:33 INFO Agent starting run with config:
+	dropout: 0.7394208131373761
+	hidden_size: 512
+	learning_rate: 0.004085980625895361
+	num_epochs: 40
+	num_layers: 1
+	weight_decay: 0.0001439776020499899
+2023-03-24 17:10:33 INFO About to run command: "python3 baseline_model_training_wandb.py"
+2023-03-24 17:10:34 ERROR Exception while processing command: {'run_id': 'qadvc5uc', 'program': 'baseline_model_training_wandb.py', 'type': 'run', 'args': {'dropout': {'value': 0.7394208131373761}, 'hidden_size': {'value': 512}, 'learning_rate': {'value': 0.004085980625895361}, 'num_epochs': {'value': 40}, 'num_layers': {'value': 1}, 'weight_decay': {'value': 0.0001439776020499899}}, 'runqueue_item_id': 'UnVuUXVldWVJdGVtOjI3NTI5MTk3NA==', 'logs': ['expected_improvement: nan', 'predicted_value: 0.0', 'predicted_value_std_dev: nan', 'success_probability: 1.0', 'warnings: \nSweep has no valid samples of the metric.'], 'run_storage_id': 'UnVuOnYxOnFhZHZjNXVjOm51d2UtbW9kZWw6Z2VyYXJkY2I='}
+Traceback (most recent call last):
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 365, in _process_command
+    result = self._command_run(command)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 481, in _command_run
+    proc = AgentProcess(command=command_list, env=env)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 46, in __init__
+    self._popen = subprocess.Popen(command, env=env, **kwargs)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'python3 baseline_model_training_wandb.py'
+2023-03-24 17:10:39 INFO Agent received command: run
+2023-03-24 17:10:39 INFO Agent starting run with config:
+	dropout: 0.07733859364630212
+	hidden_size: 512
+	learning_rate: 0.002209240107235025
+	num_epochs: 40
+	num_layers: 2
+	weight_decay: 0.00028016945944492767
+2023-03-24 17:10:39 INFO About to run command: "python3 baseline_model_training_wandb.py"
+2023-03-24 17:10:39 ERROR Exception while processing command: {'run_id': 'vfozjlht', 'program': 'baseline_model_training_wandb.py', 'type': 'run', 'args': {'dropout': {'value': 0.07733859364630212}, 'hidden_size': {'value': 512}, 'learning_rate': {'value': 0.002209240107235025}, 'num_epochs': {'value': 40}, 'num_layers': {'value': 2}, 'weight_decay': {'value': 0.00028016945944492767}}, 'runqueue_item_id': 'UnVuUXVldWVJdGVtOjI3NTI5Mjk5OA==', 'logs': ['expected_improvement: nan', 'predicted_value: 0.0', 'predicted_value_std_dev: nan', 'success_probability: 1.0', 'warnings: \nSweep has no valid samples of the metric.'], 'run_storage_id': 'UnVuOnYxOnZmb3pqbGh0Om51d2UtbW9kZWw6Z2VyYXJkY2I='}
+Traceback (most recent call last):
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 365, in _process_command
+    result = self._command_run(command)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 481, in _command_run
+    proc = AgentProcess(command=command_list, env=env)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 46, in __init__
+    self._popen = subprocess.Popen(command, env=env, **kwargs)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'python3 baseline_model_training_wandb.py'
+2023-03-24 17:10:44 INFO Agent received command: run
+2023-03-24 17:10:44 INFO Agent starting run with config:
+	dropout: 0.2107436706143384
+	hidden_size: 512
+	learning_rate: 0.0006038256799737134
+	num_epochs: 40
+	num_layers: 1
+	weight_decay: 0.00014521313488754598
+2023-03-24 17:10:44 INFO About to run command: "python3 baseline_model_training_wandb.py"
+2023-03-24 17:10:44 ERROR Exception while processing command: {'run_id': 'geyjn2wg', 'program': 'baseline_model_training_wandb.py', 'type': 'run', 'args': {'dropout': {'value': 0.2107436706143384}, 'hidden_size': {'value': 512}, 'learning_rate': {'value': 0.0006038256799737134}, 'num_epochs': {'value': 40}, 'num_layers': {'value': 1}, 'weight_decay': {'value': 0.00014521313488754598}}, 'runqueue_item_id': 'UnVuUXVldWVJdGVtOjI3NTI5MzAwNQ==', 'logs': ['expected_improvement: nan', 'predicted_value: 0.0', 'predicted_value_std_dev: nan', 'success_probability: 1.0', 'warnings: \nSweep has no valid samples of the metric.'], 'run_storage_id': 'UnVuOnYxOmdleWpuMndnOm51d2UtbW9kZWw6Z2VyYXJkY2I='}
+Traceback (most recent call last):
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 365, in _process_command
+    result = self._command_run(command)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 481, in _command_run
+    proc = AgentProcess(command=command_list, env=env)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 46, in __init__
+    self._popen = subprocess.Popen(command, env=env, **kwargs)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'python3 baseline_model_training_wandb.py'
+2023-03-24 17:10:50 INFO Agent received command: run
+2023-03-24 17:10:50 INFO Agent starting run with config:
+	dropout: 0.5825690008626884
+	hidden_size: 64
+	learning_rate: 0.00418493102166259
+	num_epochs: 70
+	num_layers: 1
+	weight_decay: 0.0009802904309845271
+2023-03-24 17:10:50 INFO About to run command: "python3 baseline_model_training_wandb.py"
+2023-03-24 17:10:50 ERROR Exception while processing command: {'run_id': 'rhusq570', 'program': 'baseline_model_training_wandb.py', 'type': 'run', 'args': {'dropout': {'value': 0.5825690008626884}, 'hidden_size': {'value': 64}, 'learning_rate': {'value': 0.00418493102166259}, 'num_epochs': {'value': 70}, 'num_layers': {'value': 1}, 'weight_decay': {'value': 0.0009802904309845271}}, 'runqueue_item_id': 'UnVuUXVldWVJdGVtOjI3NTI5MzUxMA==', 'logs': ['expected_improvement: nan', 'predicted_value: 0.0', 'predicted_value_std_dev: nan', 'success_probability: 1.0', 'warnings: \nSweep has no valid samples of the metric.'], 'run_storage_id': 'UnVuOnYxOnJodXNxNTcwOm51d2UtbW9kZWw6Z2VyYXJkY2I='}
+Traceback (most recent call last):
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 365, in _process_command
+    result = self._command_run(command)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 481, in _command_run
+    proc = AgentProcess(command=command_list, env=env)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/site-packages/wandb/wandb_agent.py", line 46, in __init__
+    self._popen = subprocess.Popen(command, env=env, **kwargs)
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/usuaris/veu/gerard.calvo.bartra/miniconda3/envs/nuwe/lib/python3.10/subprocess.py", line 1847, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'python3 baseline_model_training_wandb.py'
+2023-03-24 17:11:12 INFO Running runs: []
+2023-03-24 17:11:13 INFO Agent received command: run
+2023-03-24 17:11:13 INFO Agent starting run with config:
+	dropout: 0.7772334759129067
+	hidden_size: 512
+	learning_rate: 0.002809349392022554
+	num_epochs: 50
+	num_layers: 4
+	weight_decay: 0.0005001962939055279
+2023-03-24 17:11:13 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.7772334759129067 --hidden_size=512 --learning_rate=0.002809349392022554 --num_epochs=50 --num_layers=4 --weight_decay=0.0005001962939055279
+2023-03-24 17:11:18 INFO Running runs: ['0g3aenxl']
+2023-03-24 17:11:33 INFO Cleaning up finished run: 0g3aenxl
+2023-03-24 17:13:13 INFO Running runs: []
+2023-03-24 17:13:13 INFO Agent received command: run
+2023-03-24 17:13:13 INFO Agent starting run with config:
+	dropout: 0.05315156461026574
+	hidden_size: 128
+	learning_rate: 0.0036897974496333617
+	num_epochs: 80
+	num_layers: 4
+	weight_decay: 0.0004768131131936519
+2023-03-24 17:13:13 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.05315156461026574 --hidden_size=128 --learning_rate=0.0036897974496333617 --num_epochs=80 --num_layers=4 --weight_decay=0.0004768131131936519
+2023-03-24 17:13:18 INFO Running runs: ['rfp4sp1e']
+2023-03-24 17:17:22 INFO Cleaning up finished run: rfp4sp1e
+2023-03-24 17:17:27 INFO Agent received command: run
+2023-03-24 17:17:27 INFO Agent starting run with config:
+	dropout: 0.6412019664098596
+	hidden_size: 512
+	learning_rate: 0.00911702707646436
+	num_epochs: 10
+	num_layers: 5
+	weight_decay: 0.0005157650841180105
+2023-03-24 17:17:27 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.6412019664098596 --hidden_size=512 --learning_rate=0.00911702707646436 --num_epochs=10 --num_layers=5 --weight_decay=0.0005157650841180105
+2023-03-24 17:17:32 INFO Running runs: ['nl42nuep']
+2023-03-24 17:18:29 INFO Cleaning up finished run: nl42nuep
+2023-03-24 17:18:30 INFO Agent received command: run
+2023-03-24 17:18:30 INFO Agent starting run with config:
+	dropout: 0.3121216844375423
+	hidden_size: 512
+	learning_rate: 0.007369870649473632
+	num_epochs: 50
+	num_layers: 5
+	weight_decay: 0.0001673786829683282
+2023-03-24 17:18:30 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.3121216844375423 --hidden_size=512 --learning_rate=0.007369870649473632 --num_epochs=50 --num_layers=5 --weight_decay=0.0001673786829683282
+2023-03-24 17:18:35 INFO Running runs: ['s8jbnkov']
+2023-03-24 17:22:38 INFO Cleaning up finished run: s8jbnkov
+2023-03-24 17:22:39 INFO Agent received command: run
+2023-03-24 17:22:39 INFO Agent starting run with config:
+	dropout: 0.09362569749112357
+	hidden_size: 256
+	learning_rate: 0.0034462384465924535
+	num_epochs: 70
+	num_layers: 5
+	weight_decay: 0.000499032211278916
+2023-03-24 17:22:39 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.09362569749112357 --hidden_size=256 --learning_rate=0.0034462384465924535 --num_epochs=70 --num_layers=5 --weight_decay=0.000499032211278916
+2023-03-24 17:22:44 INFO Running runs: ['dy0sbw2q']
+2023-03-24 17:28:25 INFO Cleaning up finished run: dy0sbw2q
+2023-03-24 17:28:26 INFO Agent received command: run
+2023-03-24 17:28:26 INFO Agent starting run with config:
+	dropout: 0.005462118298172758
+	hidden_size: 128
+	learning_rate: 0.0008407071940835192
+	num_epochs: 90
+	num_layers: 5
+	weight_decay: 0.0002483721220810268
+2023-03-24 17:28:26 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.005462118298172758 --hidden_size=128 --learning_rate=0.0008407071940835192 --num_epochs=90 --num_layers=5 --weight_decay=0.0002483721220810268
+2023-03-24 17:28:31 INFO Running runs: ['4qse4sv6']
+2023-03-24 17:33:49 INFO Cleaning up finished run: 4qse4sv6
+2023-03-24 17:33:50 INFO Agent received command: run
+2023-03-24 17:33:50 INFO Agent starting run with config:
+	dropout: 0.11367909469680414
+	hidden_size: 128
+	learning_rate: 0.0008598849436225637
+	num_epochs: 100
+	num_layers: 3
+	weight_decay: 0.0009978880186568063
+2023-03-24 17:33:50 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.11367909469680414 --hidden_size=128 --learning_rate=0.0008598849436225637 --num_epochs=100 --num_layers=3 --weight_decay=0.0009978880186568063
+2023-03-24 17:33:55 INFO Running runs: ['o92rfxud']
+2023-03-24 17:37:53 INFO Cleaning up finished run: o92rfxud
+2023-03-24 17:37:54 INFO Agent received command: run
+2023-03-24 17:37:54 INFO Agent starting run with config:
+	dropout: 0.02383644968677903
+	hidden_size: 32
+	learning_rate: 0.004268040434954268
+	num_epochs: 100
+	num_layers: 2
+	weight_decay: 0.000767643660437567
+2023-03-24 17:37:54 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.02383644968677903 --hidden_size=32 --learning_rate=0.004268040434954268 --num_epochs=100 --num_layers=2 --weight_decay=0.000767643660437567
+2023-03-24 17:37:59 INFO Running runs: ['r2opwmgt']
+2023-03-24 17:41:37 INFO Cleaning up finished run: r2opwmgt
+2023-03-24 17:41:37 INFO Agent received command: run
+2023-03-24 17:41:37 INFO Agent starting run with config:
+	dropout: 0.0043480762697683415
+	hidden_size: 128
+	learning_rate: 0.0016775557004277942
+	num_epochs: 100
+	num_layers: 2
+	weight_decay: 0.0006354735554054808
+2023-03-24 17:41:37 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.0043480762697683415 --hidden_size=128 --learning_rate=0.0016775557004277942 --num_epochs=100 --num_layers=2 --weight_decay=0.0006354735554054808
+2023-03-24 17:41:42 INFO Running runs: ['lrhdq1f5']
+2023-03-24 17:45:30 INFO Cleaning up finished run: lrhdq1f5
+2023-03-24 17:45:30 INFO Agent received command: run
+2023-03-24 17:45:30 INFO Agent starting run with config:
+	dropout: 0.06718323857267601
+	hidden_size: 32
+	learning_rate: 0.0008322891868904941
+	num_epochs: 70
+	num_layers: 5
+	weight_decay: 0.0004867960972123648
+2023-03-24 17:45:30 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.06718323857267601 --hidden_size=32 --learning_rate=0.0008322891868904941 --num_epochs=70 --num_layers=5 --weight_decay=0.0004867960972123648
+2023-03-24 17:45:35 INFO Running runs: ['hyg141be']
+2023-03-24 17:48:28 INFO Cleaning up finished run: hyg141be
+2023-03-24 17:48:28 INFO Agent received command: run
+2023-03-24 17:48:28 INFO Agent starting run with config:
+	dropout: 0.02382237065679398
+	hidden_size: 256
+	learning_rate: 0.006071239179268033
+	num_epochs: 90
+	num_layers: 5
+	weight_decay: 0.0009657431025270072
+2023-03-24 17:48:28 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.02382237065679398 --hidden_size=256 --learning_rate=0.006071239179268033 --num_epochs=90 --num_layers=5 --weight_decay=0.0009657431025270072
+2023-03-24 17:48:33 INFO Running runs: ['7knwsd1y']
+2023-03-24 17:54:27 INFO Cleaning up finished run: 7knwsd1y
+2023-03-24 17:54:28 INFO Agent received command: run
+2023-03-24 17:54:28 INFO Agent starting run with config:
+	dropout: 0.16109928530094983
+	hidden_size: 32
+	learning_rate: 0.005565438143974321
+	num_epochs: 100
+	num_layers: 4
+	weight_decay: 0.0007039095858718899
+2023-03-24 17:54:28 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.16109928530094983 --hidden_size=32 --learning_rate=0.005565438143974321 --num_epochs=100 --num_layers=4 --weight_decay=0.0007039095858718899
+2023-03-24 17:54:33 INFO Running runs: ['k8i4n73q']
+2023-03-24 17:58:16 INFO Cleaning up finished run: k8i4n73q
+2023-03-24 17:58:16 INFO Agent received command: run
+2023-03-24 17:58:16 INFO Agent starting run with config:
+	dropout: 0.05828757219324565
+	hidden_size: 256
+	learning_rate: 0.004453329637411254
+	num_epochs: 100
+	num_layers: 5
+	weight_decay: 0.0008812219582237429
+2023-03-24 17:58:16 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.05828757219324565 --hidden_size=256 --learning_rate=0.004453329637411254 --num_epochs=100 --num_layers=5 --weight_decay=0.0008812219582237429
+2023-03-24 17:58:21 INFO Running runs: ['14nc6xj9']
+2023-03-24 18:05:31 INFO Cleaning up finished run: 14nc6xj9
+2023-03-24 18:05:32 INFO Agent received command: run
+2023-03-24 18:05:32 INFO Agent starting run with config:
+	dropout: 0.10125454143814824
+	hidden_size: 256
+	learning_rate: 0.004560301599273491
+	num_epochs: 80
+	num_layers: 5
+	weight_decay: 0.0003439085366732937
+2023-03-24 18:05:32 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.10125454143814824 --hidden_size=256 --learning_rate=0.004560301599273491 --num_epochs=80 --num_layers=5 --weight_decay=0.0003439085366732937
+2023-03-24 18:05:37 INFO Running runs: ['fjtinhsm']
+2023-03-24 18:11:13 INFO Cleaning up finished run: fjtinhsm
+2023-03-24 18:11:14 INFO Agent received command: run
+2023-03-24 18:11:14 INFO Agent starting run with config:
+	dropout: 0.04047956101616653
+	hidden_size: 32
+	learning_rate: 0.002677415119955666
+	num_epochs: 100
+	num_layers: 2
+	weight_decay: 0.000712569037500546
+2023-03-24 18:11:14 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.04047956101616653 --hidden_size=32 --learning_rate=0.002677415119955666 --num_epochs=100 --num_layers=2 --weight_decay=0.000712569037500546
+2023-03-24 18:11:19 INFO Running runs: ['khqi553g']
+2023-03-24 18:15:03 INFO Cleaning up finished run: khqi553g
+2023-03-24 18:15:04 INFO Agent received command: run
+2023-03-24 18:15:04 INFO Agent starting run with config:
+	dropout: 0.029315742431428673
+	hidden_size: 64
+	learning_rate: 0.0029491462727601414
+	num_epochs: 90
+	num_layers: 3
+	weight_decay: 0.0005934269897217343
+2023-03-24 18:15:04 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.029315742431428673 --hidden_size=64 --learning_rate=0.0029491462727601414 --num_epochs=90 --num_layers=3 --weight_decay=0.0005934269897217343
+2023-03-24 18:15:09 INFO Running runs: ['t8sfhc5f']
+2023-03-24 18:20:35 INFO Cleaning up finished run: t8sfhc5f
+2023-03-24 18:20:36 INFO Agent received command: run
+2023-03-24 18:20:36 INFO Agent starting run with config:
+	dropout: 0.14252761088281174
+	hidden_size: 32
+	learning_rate: 0.0027332544314406606
+	num_epochs: 100
+	num_layers: 3
+	weight_decay: 0.0007543137675820243
+2023-03-24 18:20:36 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.14252761088281174 --hidden_size=32 --learning_rate=0.0027332544314406606 --num_epochs=100 --num_layers=3 --weight_decay=0.0007543137675820243
+2023-03-24 18:20:41 INFO Running runs: ['xr0ekn1m']
+2023-03-24 18:24:50 INFO Cleaning up finished run: xr0ekn1m
+2023-03-24 18:24:50 INFO Agent received command: run
+2023-03-24 18:24:50 INFO Agent starting run with config:
+	dropout: 0.24851068657822203
+	hidden_size: 64
+	learning_rate: 0.0024621745961896702
+	num_epochs: 100
+	num_layers: 3
+	weight_decay: 0.0007616284197356577
+2023-03-24 18:24:50 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.24851068657822203 --hidden_size=64 --learning_rate=0.0024621745961896702 --num_epochs=100 --num_layers=3 --weight_decay=0.0007616284197356577
+2023-03-24 18:24:55 INFO Running runs: ['h53t7lh5']
+2023-03-24 18:28:33 INFO Cleaning up finished run: h53t7lh5
+2023-03-24 18:28:33 INFO Agent received command: run
+2023-03-24 18:28:33 INFO Agent starting run with config:
+	dropout: 0.04160379415509317
+	hidden_size: 32
+	learning_rate: 0.003576029642173646
+	num_epochs: 100
+	num_layers: 3
+	weight_decay: 0.0007180527200549218
+2023-03-24 18:28:33 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.04160379415509317 --hidden_size=32 --learning_rate=0.003576029642173646 --num_epochs=100 --num_layers=3 --weight_decay=0.0007180527200549218
+2023-03-24 18:28:38 INFO Running runs: ['py6wodho']
+2023-03-24 18:32:31 INFO Cleaning up finished run: py6wodho
+2023-03-24 18:32:32 INFO Agent received command: run
+2023-03-24 18:32:32 INFO Agent starting run with config:
+	dropout: 0.22409083569863172
+	hidden_size: 32
+	learning_rate: 0.005030153810731534
+	num_epochs: 50
+	num_layers: 4
+	weight_decay: 5.5391850890170306e-05
+2023-03-24 18:32:32 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.22409083569863172 --hidden_size=32 --learning_rate=0.005030153810731534 --num_epochs=50 --num_layers=4 --weight_decay=5.5391850890170306e-05
+2023-03-24 18:32:37 INFO Running runs: ['0z9y02o8']
+2023-03-24 18:34:41 INFO Cleaning up finished run: 0z9y02o8
+2023-03-24 18:34:42 INFO Agent received command: run
+2023-03-24 18:34:42 INFO Agent starting run with config:
+	dropout: 0.24115848454089273
+	hidden_size: 512
+	learning_rate: 0.0036542931520642126
+	num_epochs: 70
+	num_layers: 4
+	weight_decay: 0.0007379165359988052
+2023-03-24 18:34:42 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.24115848454089273 --hidden_size=512 --learning_rate=0.0036542931520642126 --num_epochs=70 --num_layers=4 --weight_decay=0.0007379165359988052
+2023-03-24 18:34:47 INFO Running runs: ['b0g8f0kf']
+2023-03-24 18:39:52 INFO Cleaning up finished run: b0g8f0kf
+2023-03-24 18:39:52 INFO Agent received command: run
+2023-03-24 18:39:52 INFO Agent starting run with config:
+	dropout: 0.7056086150949552
+	hidden_size: 64
+	learning_rate: 0.007705673579883801
+	num_epochs: 70
+	num_layers: 5
+	weight_decay: 0.0007489315959896459
+2023-03-24 18:39:52 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.7056086150949552 --hidden_size=64 --learning_rate=0.007705673579883801 --num_epochs=70 --num_layers=5 --weight_decay=0.0007489315959896459
+2023-03-24 18:39:57 INFO Running runs: ['r4929vh1']
+2023-03-24 18:42:53 INFO Cleaning up finished run: r4929vh1
+2023-03-24 18:42:54 INFO Agent received command: run
+2023-03-24 18:42:54 INFO Agent starting run with config:
+	dropout: 0.2602658159693381
+	hidden_size: 32
+	learning_rate: 0.0046707873900482385
+	num_epochs: 100
+	num_layers: 2
+	weight_decay: 0.0008056127712080131
+2023-03-24 18:42:54 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.2602658159693381 --hidden_size=32 --learning_rate=0.0046707873900482385 --num_epochs=100 --num_layers=2 --weight_decay=0.0008056127712080131
+2023-03-24 18:42:59 INFO Running runs: ['8jvatjh8']
+2023-03-24 18:46:26 INFO Cleaning up finished run: 8jvatjh8
+2023-03-24 18:46:27 INFO Agent received command: run
+2023-03-24 18:46:27 INFO Agent starting run with config:
+	dropout: 0.1155186995902554
+	hidden_size: 32
+	learning_rate: 0.001143609016493597
+	num_epochs: 80
+	num_layers: 2
+	weight_decay: 0.0008723652512846306
+2023-03-24 18:46:27 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.1155186995902554 --hidden_size=32 --learning_rate=0.001143609016493597 --num_epochs=80 --num_layers=2 --weight_decay=0.0008723652512846306
+2023-03-24 18:46:32 INFO Running runs: ['mkvl151y']
+2023-03-24 18:49:12 INFO Cleaning up finished run: mkvl151y
+2023-03-24 18:49:13 INFO Agent received command: run
+2023-03-24 18:49:13 INFO Agent starting run with config:
+	dropout: 0.0067813194429363404
+	hidden_size: 32
+	learning_rate: 0.0021104821702115826
+	num_epochs: 100
+	num_layers: 2
+	weight_decay: 0.000957105328228257
+2023-03-24 18:49:13 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.0067813194429363404 --hidden_size=32 --learning_rate=0.0021104821702115826 --num_epochs=100 --num_layers=2 --weight_decay=0.000957105328228257
+2023-03-24 18:49:18 INFO Running runs: ['mfng127z']
+2023-03-24 18:52:35 INFO Cleaning up finished run: mfng127z
+2023-03-24 18:52:35 INFO Agent received command: run
+2023-03-24 18:52:35 INFO Agent starting run with config:
+	dropout: 0.01449082910065771
+	hidden_size: 32
+	learning_rate: 0.00014754461577605926
+	num_epochs: 50
+	num_layers: 2
+	weight_decay: 0.0007573472203443248
+2023-03-24 18:52:35 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.01449082910065771 --hidden_size=32 --learning_rate=0.00014754461577605926 --num_epochs=50 --num_layers=2 --weight_decay=0.0007573472203443248
+2023-03-24 18:52:40 INFO Running runs: ['ccxp0q3a']
+2023-03-24 18:54:34 INFO Cleaning up finished run: ccxp0q3a
+2023-03-24 18:54:35 INFO Agent received command: run
+2023-03-24 18:54:35 INFO Agent starting run with config:
+	dropout: 0.12221108342477705
+	hidden_size: 32
+	learning_rate: 0.0026738381391587514
+	num_epochs: 90
+	num_layers: 3
+	weight_decay: 0.000924359674710028
+2023-03-24 18:54:35 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.12221108342477705 --hidden_size=32 --learning_rate=0.0026738381391587514 --num_epochs=90 --num_layers=3 --weight_decay=0.000924359674710028
+2023-03-24 18:54:40 INFO Running runs: ['2puezj2e']
+2023-03-24 18:57:51 INFO Cleaning up finished run: 2puezj2e
+2023-03-24 18:57:52 INFO Agent received command: run
+2023-03-24 18:57:52 INFO Agent starting run with config:
+	dropout: 0.0004952320624703078
+	hidden_size: 512
+	learning_rate: 0.005225235331322163
+	num_epochs: 90
+	num_layers: 1
+	weight_decay: 0.0008835269784251067
+2023-03-24 18:57:52 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.0004952320624703078 --hidden_size=512 --learning_rate=0.005225235331322163 --num_epochs=90 --num_layers=1 --weight_decay=0.0008835269784251067
+2023-03-24 18:57:57 INFO Running runs: ['8iiqouj7']
+2023-03-24 19:02:42 INFO Cleaning up finished run: 8iiqouj7
+2023-03-24 19:02:42 INFO Agent received command: run
+2023-03-24 19:02:42 INFO Agent starting run with config:
+	dropout: 0.029123823566111807
+	hidden_size: 512
+	learning_rate: 0.007052593175415844
+	num_epochs: 80
+	num_layers: 3
+	weight_decay: 0.0009725767380803988
+2023-03-24 19:02:42 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.029123823566111807 --hidden_size=512 --learning_rate=0.007052593175415844 --num_epochs=80 --num_layers=3 --weight_decay=0.0009725767380803988
+2023-03-24 19:02:47 INFO Running runs: ['mvd9sdxk']
+2023-03-24 19:08:08 INFO Cleaning up finished run: mvd9sdxk
+2023-03-24 19:08:09 INFO Agent received command: run
+2023-03-24 19:08:09 INFO Agent starting run with config:
+	dropout: 0.0783073301416688
+	hidden_size: 64
+	learning_rate: 0.00482151027639773
+	num_epochs: 100
+	num_layers: 1
+	weight_decay: 0.000906988333901948
+2023-03-24 19:08:09 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.0783073301416688 --hidden_size=64 --learning_rate=0.00482151027639773 --num_epochs=100 --num_layers=1 --weight_decay=0.000906988333901948
+2023-03-24 19:08:14 INFO Running runs: ['mb8bwuqm']
+2023-03-24 19:11:16 INFO Cleaning up finished run: mb8bwuqm
+2023-03-24 19:11:17 INFO Agent received command: run
+2023-03-24 19:11:17 INFO Agent starting run with config:
+	dropout: 0.0628386800199154
+	hidden_size: 512
+	learning_rate: 0.0065233131811455675
+	num_epochs: 70
+	num_layers: 1
+	weight_decay: 0.0003055257871077093
+2023-03-24 19:11:17 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.0628386800199154 --hidden_size=512 --learning_rate=0.0065233131811455675 --num_epochs=70 --num_layers=1 --weight_decay=0.0003055257871077093
+2023-03-24 19:11:22 INFO Running runs: ['feeu9i7o']
+2023-03-24 19:13:48 INFO Cleaning up finished run: feeu9i7o
+2023-03-24 19:13:48 INFO Agent received command: run
+2023-03-24 19:13:48 INFO Agent starting run with config:
+	dropout: 0.3328060875795562
+	hidden_size: 32
+	learning_rate: 0.0005896221429284172
+	num_epochs: 90
+	num_layers: 3
+	weight_decay: 0.0007311827482467744
+2023-03-24 19:13:48 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.3328060875795562 --hidden_size=32 --learning_rate=0.0005896221429284172 --num_epochs=90 --num_layers=3 --weight_decay=0.0007311827482467744
+2023-03-24 19:13:53 INFO Running runs: ['9aqouaoh']
+2023-03-24 19:17:00 INFO Cleaning up finished run: 9aqouaoh
+2023-03-24 19:17:00 INFO Agent received command: run
+2023-03-24 19:17:00 INFO Agent starting run with config:
+	dropout: 0.2647470665077165
+	hidden_size: 32
+	learning_rate: 0.00032107833941974283
+	num_epochs: 90
+	num_layers: 1
+	weight_decay: 0.000968193824233132
+2023-03-24 19:17:00 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.2647470665077165 --hidden_size=32 --learning_rate=0.00032107833941974283 --num_epochs=90 --num_layers=1 --weight_decay=0.000968193824233132
+2023-03-24 19:17:05 INFO Running runs: ['pmsaaao8']
+2023-03-24 19:19:56 INFO Cleaning up finished run: pmsaaao8
+2023-03-24 19:19:57 INFO Agent received command: run
+2023-03-24 19:19:57 INFO Agent starting run with config:
+	dropout: 0.0511329417681365
+	hidden_size: 512
+	learning_rate: 0.00532177370885668
+	num_epochs: 70
+	num_layers: 2
+	weight_decay: 0.0008792614415065288
+2023-03-24 19:19:57 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.0511329417681365 --hidden_size=512 --learning_rate=0.00532177370885668 --num_epochs=70 --num_layers=2 --weight_decay=0.0008792614415065288
+2023-03-24 19:20:02 INFO Running runs: ['xt4wxwg8']
+2023-03-24 19:23:50 INFO Cleaning up finished run: xt4wxwg8
+2023-03-24 19:23:50 INFO Agent received command: run
+2023-03-24 19:23:50 INFO Agent starting run with config:
+	dropout: 0.03313629779895253
+	hidden_size: 512
+	learning_rate: 0.009314904833302608
+	num_epochs: 100
+	num_layers: 4
+	weight_decay: 0.0005878508299652152
+2023-03-24 19:23:50 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.03313629779895253 --hidden_size=512 --learning_rate=0.009314904833302608 --num_epochs=100 --num_layers=4 --weight_decay=0.0005878508299652152
+2023-03-24 19:37:47 INFO Running runs: []
+2023-03-24 19:37:47 INFO Agent received command: run
+2023-03-24 19:37:47 INFO Agent starting run with config:
+	dropout: 0.762817137569741
+	hidden_size: 512
+	learning_rate: 0.005134872988553634
+	num_epochs: 100
+	num_layers: 1
+	weight_decay: 0.0009411924157191836
+2023-03-24 19:37:47 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.762817137569741 --hidden_size=512 --learning_rate=0.005134872988553634 --num_epochs=100 --num_layers=1 --weight_decay=0.0009411924157191836
+2023-03-24 19:37:52 INFO Running runs: ['7xf4bu5w']
+2023-03-24 19:44:16 INFO Cleaning up finished run: 7xf4bu5w
+2023-03-24 19:44:24 INFO Agent received command: run
+2023-03-24 19:44:24 INFO Agent starting run with config:
+	dropout: 0.34624154821834785
+	hidden_size: 512
+	learning_rate: 0.003245063884253678
+	num_epochs: 100
+	num_layers: 5
+	weight_decay: 0.0008495986974085142
+2023-03-24 19:44:24 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.34624154821834785 --hidden_size=512 --learning_rate=0.003245063884253678 --num_epochs=100 --num_layers=5 --weight_decay=0.0008495986974085142
+2023-03-24 19:44:29 INFO Running runs: ['k30csb3h']
+2023-03-24 19:59:06 INFO Cleaning up finished run: k30csb3h
+2023-03-24 19:59:07 INFO Agent received command: run
+2023-03-24 19:59:07 INFO Agent starting run with config:
+	dropout: 0.5696926844705059
+	hidden_size: 512
+	learning_rate: 0.004389049841843013
+	num_epochs: 70
+	num_layers: 3
+	weight_decay: 0.0005617808446501838
+2023-03-24 19:59:07 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.5696926844705059 --hidden_size=512 --learning_rate=0.004389049841843013 --num_epochs=70 --num_layers=3 --weight_decay=0.0005617808446501838
+2023-03-24 19:59:12 INFO Running runs: ['iw74l6or']
+2023-03-24 20:05:40 INFO Cleaning up finished run: iw74l6or
+2023-03-24 20:05:41 INFO Agent received command: run
+2023-03-24 20:05:41 INFO Agent starting run with config:
+	dropout: 0.5964275586873361
+	hidden_size: 512
+	learning_rate: 0.002970732031048779
+	num_epochs: 100
+	num_layers: 5
+	weight_decay: 0.0005984588719767352
+2023-03-24 20:05:41 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.5964275586873361 --hidden_size=512 --learning_rate=0.002970732031048779 --num_epochs=100 --num_layers=5 --weight_decay=0.0005984588719767352
+2023-03-24 20:05:46 INFO Running runs: ['diamh4v2']
+2023-03-24 20:17:36 INFO Cleaning up finished run: diamh4v2
+2023-03-24 20:17:36 INFO Agent received command: run
+2023-03-24 20:17:36 INFO Agent starting run with config:
+	dropout: 0.16339213888508664
+	hidden_size: 32
+	learning_rate: 0.00045265899460473976
+	num_epochs: 100
+	num_layers: 1
+	weight_decay: 0.000770925683484175
+2023-03-24 20:17:36 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.16339213888508664 --hidden_size=32 --learning_rate=0.00045265899460473976 --num_epochs=100 --num_layers=1 --weight_decay=0.000770925683484175
+2023-03-24 20:17:41 INFO Running runs: ['6opx4yjf']
+2023-03-24 20:23:28 INFO Cleaning up finished run: 6opx4yjf
+2023-03-24 20:23:29 INFO Agent received command: run
+2023-03-24 20:23:29 INFO Agent starting run with config:
+	dropout: 0.6908132904481104
+	hidden_size: 512
+	learning_rate: 0.005664185298583387
+	num_epochs: 10
+	num_layers: 1
+	weight_decay: 0.0009980634024515204
+2023-03-24 20:23:29 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.6908132904481104 --hidden_size=512 --learning_rate=0.005664185298583387 --num_epochs=10 --num_layers=1 --weight_decay=0.0009980634024515204
+2023-03-24 20:23:34 INFO Running runs: ['e5pwskxb']
+2023-03-24 20:24:31 INFO Cleaning up finished run: e5pwskxb
+2023-03-24 20:24:31 INFO Agent received command: run
+2023-03-24 20:24:31 INFO Agent starting run with config:
+	dropout: 0.2888278009003206
+	hidden_size: 32
+	learning_rate: 0.00762925917795724
+	num_epochs: 60
+	num_layers: 3
+	weight_decay: 0.0007616085937677126
+2023-03-24 20:24:31 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.2888278009003206 --hidden_size=32 --learning_rate=0.00762925917795724 --num_epochs=60 --num_layers=3 --weight_decay=0.0007616085937677126
+2023-03-24 20:24:36 INFO Running runs: ['vhw235sd']
+2023-03-24 20:28:40 INFO Cleaning up finished run: vhw235sd
+2023-03-24 20:28:40 INFO Agent received command: run
+2023-03-24 20:28:40 INFO Agent starting run with config:
+	dropout: 0.2573385769973428
+	hidden_size: 128
+	learning_rate: 0.0020773901200188288
+	num_epochs: 30
+	num_layers: 2
+	weight_decay: 0.0005909350172560521
+2023-03-24 20:28:40 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.2573385769973428 --hidden_size=128 --learning_rate=0.0020773901200188288 --num_epochs=30 --num_layers=2 --weight_decay=0.0005909350172560521
+2023-03-24 20:28:45 INFO Running runs: ['ylwtfet9']
+2023-03-24 20:30:55 INFO Cleaning up finished run: ylwtfet9
+2023-03-24 20:30:55 INFO Agent received command: run
+2023-03-24 20:30:55 INFO Agent starting run with config:
+	dropout: 0.2424517909717701
+	hidden_size: 128
+	learning_rate: 0.007955565372054501
+	num_epochs: 50
+	num_layers: 4
+	weight_decay: 0.00015916883327414335
+2023-03-24 20:30:55 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.2424517909717701 --hidden_size=128 --learning_rate=0.007955565372054501 --num_epochs=50 --num_layers=4 --weight_decay=0.00015916883327414335
+2023-03-24 20:31:00 INFO Running runs: ['wdorm2bm']
+2023-03-24 20:34:54 INFO Cleaning up finished run: wdorm2bm
+2023-03-24 20:34:54 INFO Agent received command: run
+2023-03-24 20:34:54 INFO Agent starting run with config:
+	dropout: 0.01845526710391132
+	hidden_size: 32
+	learning_rate: 0.00958176943703362
+	num_epochs: 100
+	num_layers: 1
+	weight_decay: 0.0004916212641284944
+2023-03-24 20:34:54 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.01845526710391132 --hidden_size=32 --learning_rate=0.00958176943703362 --num_epochs=100 --num_layers=1 --weight_decay=0.0004916212641284944
+2023-03-24 20:34:59 INFO Running runs: ['5j7gjv2m']
+2023-03-24 20:40:33 INFO Cleaning up finished run: 5j7gjv2m
+2023-03-24 20:40:34 INFO Agent received command: run
+2023-03-24 20:40:34 INFO Agent starting run with config:
+	dropout: 0.21708881117989096
+	hidden_size: 512
+	learning_rate: 0.002842724679398946
+	num_epochs: 70
+	num_layers: 1
+	weight_decay: 0.00014921634213925129
+2023-03-24 20:40:34 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.21708881117989096 --hidden_size=512 --learning_rate=0.002842724679398946 --num_epochs=70 --num_layers=1 --weight_decay=0.00014921634213925129
+2023-03-24 20:40:39 INFO Running runs: ['gaqtmbis']
+2023-03-24 20:44:48 INFO Cleaning up finished run: gaqtmbis
+2023-03-24 20:44:48 INFO Agent received command: run
+2023-03-24 20:44:48 INFO Agent starting run with config:
+	dropout: 0.3737678315744579
+	hidden_size: 128
+	learning_rate: 0.002825124974710041
+	num_epochs: 30
+	num_layers: 3
+	weight_decay: 0.0006235410302942073
+2023-03-24 20:44:48 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.3737678315744579 --hidden_size=128 --learning_rate=0.002825124974710041 --num_epochs=30 --num_layers=3 --weight_decay=0.0006235410302942073
+2023-03-24 20:44:53 INFO Running runs: ['qngprtrr']
+2023-03-24 20:47:13 INFO Cleaning up finished run: qngprtrr
+2023-03-24 20:47:14 INFO Agent received command: run
+2023-03-24 20:47:14 INFO Agent starting run with config:
+	dropout: 0.16617168195293897
+	hidden_size: 128
+	learning_rate: 0.0021095776096992837
+	num_epochs: 60
+	num_layers: 2
+	weight_decay: 0.0003853469339779272
+2023-03-24 20:47:14 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.16617168195293897 --hidden_size=128 --learning_rate=0.0021095776096992837 --num_epochs=60 --num_layers=2 --weight_decay=0.0003853469339779272
+2023-03-24 20:47:19 INFO Running runs: ['nzlftvwp']
+2023-03-24 20:51:12 INFO Cleaning up finished run: nzlftvwp
+2023-03-24 20:51:13 INFO Agent received command: run
+2023-03-24 20:51:13 INFO Agent starting run with config:
+	dropout: 0.20459342126695496
+	hidden_size: 256
+	learning_rate: 0.0015252854557788005
+	num_epochs: 30
+	num_layers: 3
+	weight_decay: 0.0007602751383811382
+2023-03-24 20:51:13 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.20459342126695496 --hidden_size=256 --learning_rate=0.0015252854557788005 --num_epochs=30 --num_layers=3 --weight_decay=0.0007602751383811382
+2023-03-24 20:51:18 INFO Running runs: ['5pbc2i41']
+2023-03-24 20:53:53 INFO Cleaning up finished run: 5pbc2i41
+2023-03-24 20:53:54 INFO Agent received command: run
+2023-03-24 20:53:54 INFO Agent starting run with config:
+	dropout: 0.06962598473947486
+	hidden_size: 256
+	learning_rate: 0.0017259310428755766
+	num_epochs: 40
+	num_layers: 3
+	weight_decay: 0.0007952554257213796
+2023-03-24 20:53:54 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.06962598473947486 --hidden_size=256 --learning_rate=0.0017259310428755766 --num_epochs=40 --num_layers=3 --weight_decay=0.0007952554257213796
+2023-03-24 20:53:59 INFO Running runs: ['4vtvozlu']
+2023-03-24 20:57:28 INFO Cleaning up finished run: 4vtvozlu
+2023-03-24 20:57:29 INFO Agent received command: run
+2023-03-24 20:57:29 INFO Agent starting run with config:
+	dropout: 0.16129545100683257
+	hidden_size: 512
+	learning_rate: 0.0015544518573365783
+	num_epochs: 20
+	num_layers: 3
+	weight_decay: 0.0007459937836062715
+2023-03-24 20:57:29 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.16129545100683257 --hidden_size=512 --learning_rate=0.0015544518573365783 --num_epochs=20 --num_layers=3 --weight_decay=0.0007459937836062715
+2023-03-24 20:57:34 INFO Running runs: ['m4pvnoru']
+2023-03-24 20:59:43 INFO Cleaning up finished run: m4pvnoru
+2023-03-24 20:59:44 INFO Agent received command: run
+2023-03-24 20:59:44 INFO Agent starting run with config:
+	dropout: 0.10329283490872392
+	hidden_size: 128
+	learning_rate: 0.0001704508451623804
+	num_epochs: 10
+	num_layers: 4
+	weight_decay: 0.000774202953024377
+2023-03-24 20:59:44 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.10329283490872392 --hidden_size=128 --learning_rate=0.0001704508451623804 --num_epochs=10 --num_layers=4 --weight_decay=0.000774202953024377
+2023-03-24 20:59:49 INFO Running runs: ['sz0zcoh0']
+2023-03-24 21:00:56 INFO Cleaning up finished run: sz0zcoh0
+2023-03-24 21:00:57 INFO Agent received command: run
+2023-03-24 21:00:57 INFO Agent starting run with config:
+	dropout: 0.06733545943927544
+	hidden_size: 512
+	learning_rate: 0.0015652802338452275
+	num_epochs: 20
+	num_layers: 1
+	weight_decay: 0.0005446667372242823
+2023-03-24 21:00:57 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.06733545943927544 --hidden_size=512 --learning_rate=0.0015652802338452275 --num_epochs=20 --num_layers=1 --weight_decay=0.0005446667372242823
+2023-03-24 21:01:02 INFO Running runs: ['vb9r8xc1']
+2023-03-24 21:02:30 INFO Cleaning up finished run: vb9r8xc1
+2023-03-24 21:02:31 INFO Agent received command: run
+2023-03-24 21:02:31 INFO Agent starting run with config:
+	dropout: 0.1839914194170899
+	hidden_size: 512
+	learning_rate: 0.0021563626465469893
+	num_epochs: 40
+	num_layers: 3
+	weight_decay: 0.00065619092553512
+2023-03-24 21:02:31 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.1839914194170899 --hidden_size=512 --learning_rate=0.0021563626465469893 --num_epochs=40 --num_layers=3 --weight_decay=0.00065619092553512
+2023-03-24 21:02:36 INFO Running runs: ['y9v0kskn']
+2023-03-24 21:06:44 INFO Cleaning up finished run: y9v0kskn
+2023-03-24 21:06:45 INFO Agent received command: run
+2023-03-24 21:06:45 INFO Agent starting run with config:
+	dropout: 0.08576925051585899
+	hidden_size: 256
+	learning_rate: 0.0033080494915107
+	num_epochs: 10
+	num_layers: 2
+	weight_decay: 0.0005848770443878111
+2023-03-24 21:06:45 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.08576925051585899 --hidden_size=256 --learning_rate=0.0033080494915107 --num_epochs=10 --num_layers=2 --weight_decay=0.0005848770443878111
+2023-03-24 21:06:50 INFO Running runs: ['r8cjns04']
+2023-03-24 21:07:52 INFO Cleaning up finished run: r8cjns04
+2023-03-24 21:07:53 INFO Agent received command: run
+2023-03-24 21:07:53 INFO Agent starting run with config:
+	dropout: 0.17458417924782754
+	hidden_size: 512
+	learning_rate: 0.001189362250788094
+	num_epochs: 10
+	num_layers: 2
+	weight_decay: 0.0008573303385527943
+2023-03-24 21:07:53 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.17458417924782754 --hidden_size=512 --learning_rate=0.001189362250788094 --num_epochs=10 --num_layers=2 --weight_decay=0.0008573303385527943
+2023-03-24 21:07:58 INFO Running runs: ['yspcb98f']
+2023-03-24 21:09:05 INFO Cleaning up finished run: yspcb98f
+2023-03-24 21:09:06 INFO Agent received command: run
+2023-03-24 21:09:06 INFO Agent starting run with config:
+	dropout: 0.23828501028712937
+	hidden_size: 256
+	learning_rate: 0.0019196095222751709
+	num_epochs: 20
+	num_layers: 1
+	weight_decay: 0.00034769317963393424
+2023-03-24 21:09:06 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.23828501028712937 --hidden_size=256 --learning_rate=0.0019196095222751709 --num_epochs=20 --num_layers=1 --weight_decay=0.00034769317963393424
+2023-03-24 21:09:11 INFO Running runs: ['qjqxsvuf']
+2023-03-24 21:10:44 INFO Cleaning up finished run: qjqxsvuf
+2023-03-24 21:10:44 INFO Agent received command: exit
+2023-03-24 21:10:44 INFO Received exit command. Killing runs and quitting.
+2023-03-24 22:15:20 INFO Running runs: []
+2023-03-24 22:15:21 INFO Agent received command: run
+2023-03-24 22:15:21 INFO Agent starting run with config:
+	dropout: 0.3493764671261177
+	hidden_size: 128
+	learning_rate: 0.00946457239216011
+	num_epochs: 90
+	num_layers: 5
+	weight_decay: 0.00048017107038826086
+2023-03-24 22:15:21 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.3493764671261177 --hidden_size=128 --learning_rate=0.00946457239216011 --num_epochs=90 --num_layers=5 --weight_decay=0.00048017107038826086
+2023-03-24 22:15:26 INFO Running runs: ['e4sjpfxy']
+2023-03-24 22:22:27 INFO Cleaning up finished run: e4sjpfxy
+2023-03-24 22:22:32 INFO Agent received command: run
+2023-03-24 22:22:32 INFO Agent starting run with config:
+	dropout: 0.4825762779375999
+	hidden_size: 512
+	learning_rate: 0.005679328027831121
+	num_epochs: 30
+	num_layers: 5
+	weight_decay: 0.0001722081782276681
+2023-03-24 22:22:32 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.4825762779375999 --hidden_size=512 --learning_rate=0.005679328027831121 --num_epochs=30 --num_layers=5 --weight_decay=0.0001722081782276681
+2023-03-24 22:22:37 INFO Running runs: ['ecozbkod']
+2023-03-24 22:26:27 INFO Cleaning up finished run: ecozbkod
+2023-03-24 22:26:28 INFO Agent received command: run
+2023-03-24 22:26:28 INFO Agent starting run with config:
+	dropout: 0.7910692334579779
+	hidden_size: 128
+	learning_rate: 0.003821056096426128
+	num_epochs: 60
+	num_layers: 5
+	weight_decay: 0.0006771598815868295
+2023-03-24 22:26:28 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.7910692334579779 --hidden_size=128 --learning_rate=0.003821056096426128 --num_epochs=60 --num_layers=5 --weight_decay=0.0006771598815868295
+2023-03-24 22:26:33 INFO Running runs: ['2199eysq']
+2023-03-24 22:31:04 INFO Running runs: []
+2023-03-24 22:31:04 INFO Agent received command: run
+2023-03-24 22:31:04 INFO Agent starting run with config:
+	dropout: 0.2257352579368032
+	hidden_size: 32
+	learning_rate: 0.008059130051674298
+	num_epochs: 20
+	num_layers: 2
+	weight_decay: 0.0002969892204457569
+2023-03-24 22:31:04 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.2257352579368032 --hidden_size=32 --learning_rate=0.008059130051674298 --num_epochs=20 --num_layers=2 --weight_decay=0.0002969892204457569
+2023-03-24 22:31:09 INFO Running runs: ['exn1jb9v']
+2023-03-24 22:32:38 INFO Cleaning up finished run: exn1jb9v
+2023-03-24 22:32:46 INFO Agent received command: run
+2023-03-24 22:32:46 INFO Agent starting run with config:
+	dropout: 0.36958174119290393
+	hidden_size: 32
+	learning_rate: 0.0034620733407131825
+	num_epochs: 10
+	num_layers: 3
+	weight_decay: 0.0009278620452561352
+2023-03-24 22:32:46 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.36958174119290393 --hidden_size=32 --learning_rate=0.0034620733407131825 --num_epochs=10 --num_layers=3 --weight_decay=0.0009278620452561352
+2023-03-24 22:32:51 INFO Running runs: ['be13n7x9']
+2023-03-24 22:33:54 INFO Cleaning up finished run: be13n7x9
+2023-03-24 22:33:55 INFO Agent received command: run
+2023-03-24 22:33:55 INFO Agent starting run with config:
+	dropout: 0.7685714977206269
+	hidden_size: 128
+	learning_rate: 0.009205565918365148
+	num_epochs: 60
+	num_layers: 1
+	weight_decay: 0.0005134253580580138
+2023-03-24 22:33:55 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.7685714977206269 --hidden_size=128 --learning_rate=0.009205565918365148 --num_epochs=60 --num_layers=1 --weight_decay=0.0005134253580580138
+2023-03-24 22:34:00 INFO Running runs: ['lflswh22']
+2023-03-24 22:37:43 INFO Cleaning up finished run: lflswh22
+2023-03-24 22:37:44 INFO Agent received command: run
+2023-03-24 22:37:44 INFO Agent starting run with config:
+	dropout: 0.6378536587972063
+	hidden_size: 32
+	learning_rate: 0.0001513316641229713
+	num_epochs: 30
+	num_layers: 2
+	weight_decay: 0.0007446438585196953
+2023-03-24 22:37:44 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.6378536587972063 --hidden_size=32 --learning_rate=0.0001513316641229713 --num_epochs=30 --num_layers=2 --weight_decay=0.0007446438585196953
+2023-03-24 22:37:49 INFO Running runs: ['4mvtf9kt']
+2023-03-24 22:39:58 INFO Cleaning up finished run: 4mvtf9kt
+2023-03-24 22:39:59 INFO Agent received command: run
+2023-03-24 22:39:59 INFO Agent starting run with config:
+	dropout: 0.40543109047375225
+	hidden_size: 128
+	learning_rate: 0.008815847102307922
+	num_epochs: 60
+	num_layers: 5
+	weight_decay: 6.527621759285488e-05
+2023-03-24 22:39:59 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.40543109047375225 --hidden_size=128 --learning_rate=0.008815847102307922 --num_epochs=60 --num_layers=5 --weight_decay=6.527621759285488e-05
+2023-03-24 22:40:04 INFO Running runs: ['ga7s22iy']
+2023-03-24 22:45:10 INFO Cleaning up finished run: ga7s22iy
+2023-03-24 22:45:11 INFO Agent received command: run
+2023-03-24 22:45:11 INFO Agent starting run with config:
+	dropout: 0.28467589426847095
+	hidden_size: 64
+	learning_rate: 0.009433791156134418
+	num_epochs: 20
+	num_layers: 2
+	weight_decay: 0.0004083069559440944
+2023-03-24 22:45:11 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.28467589426847095 --hidden_size=64 --learning_rate=0.009433791156134418 --num_epochs=20 --num_layers=2 --weight_decay=0.0004083069559440944
+2023-03-24 22:45:16 INFO Running runs: ['jq73l8qg']
+2023-03-24 22:46:49 INFO Cleaning up finished run: jq73l8qg
+2023-03-24 22:46:50 INFO Agent received command: run
+2023-03-24 22:46:50 INFO Agent starting run with config:
+	dropout: 0.060465814925334455
+	hidden_size: 32
+	learning_rate: 0.006965229265557994
+	num_epochs: 20
+	num_layers: 2
+	weight_decay: 0.0005405325901356952
+2023-03-24 22:46:50 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.060465814925334455 --hidden_size=32 --learning_rate=0.006965229265557994 --num_epochs=20 --num_layers=2 --weight_decay=0.0005405325901356952
+2023-03-24 22:46:55 INFO Running runs: ['gtc7u1tx']
+2023-03-24 22:48:28 INFO Cleaning up finished run: gtc7u1tx
+2023-03-24 22:48:29 INFO Agent received command: run
+2023-03-24 22:48:29 INFO Agent starting run with config:
+	dropout: 0.005341150816518869
+	hidden_size: 64
+	learning_rate: 0.008008191041824762
+	num_epochs: 10
+	num_layers: 1
+	weight_decay: 0.00042746780820245863
+2023-03-24 22:48:29 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.005341150816518869 --hidden_size=64 --learning_rate=0.008008191041824762 --num_epochs=10 --num_layers=1 --weight_decay=0.00042746780820245863
+2023-03-24 22:48:34 INFO Running runs: ['ierbetdl']
+2023-03-24 22:49:31 INFO Cleaning up finished run: ierbetdl
+2023-03-24 22:49:32 INFO Agent received command: run
+2023-03-24 22:49:32 INFO Agent starting run with config:
+	dropout: 0.4373803035581039
+	hidden_size: 32
+	learning_rate: 0.007338921349923702
+	num_epochs: 10
+	num_layers: 1
+	weight_decay: 0.0008672722129633947
+2023-03-24 22:49:32 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.4373803035581039 --hidden_size=32 --learning_rate=0.007338921349923702 --num_epochs=10 --num_layers=1 --weight_decay=0.0008672722129633947
+2023-03-24 22:49:37 INFO Running runs: ['znumfe2j']
+2023-03-24 22:50:34 INFO Cleaning up finished run: znumfe2j
+2023-03-24 22:50:34 INFO Agent received command: run
+2023-03-24 22:50:34 INFO Agent starting run with config:
+	dropout: 0.09826880848962444
+	hidden_size: 32
+	learning_rate: 0.007669519861316826
+	num_epochs: 10
+	num_layers: 2
+	weight_decay: 0.0003522049872444547
+2023-03-24 22:50:34 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.09826880848962444 --hidden_size=32 --learning_rate=0.007669519861316826 --num_epochs=10 --num_layers=2 --weight_decay=0.0003522049872444547
+2023-03-24 22:50:39 INFO Running runs: ['336mo9s6']
+2023-03-24 22:51:36 INFO Cleaning up finished run: 336mo9s6
+2023-03-24 22:51:37 INFO Agent received command: run
+2023-03-24 22:51:37 INFO Agent starting run with config:
+	dropout: 0.00033580573829761207
+	hidden_size: 32
+	learning_rate: 0.006373049668734289
+	num_epochs: 20
+	num_layers: 1
+	weight_decay: 0.0002500785003230344
+2023-03-24 22:51:37 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.00033580573829761207 --hidden_size=32 --learning_rate=0.006373049668734289 --num_epochs=20 --num_layers=1 --weight_decay=0.0002500785003230344
+2023-03-24 22:51:42 INFO Running runs: ['6e6tv3yu']
+2023-03-24 22:53:10 INFO Cleaning up finished run: 6e6tv3yu
+2023-03-24 22:53:11 INFO Agent received command: run
+2023-03-24 22:53:11 INFO Agent starting run with config:
+	dropout: 0.07043578055894804
+	hidden_size: 32
+	learning_rate: 0.006628015359545694
+	num_epochs: 30
+	num_layers: 1
+	weight_decay: 0.00019734179092140128
+2023-03-24 22:53:11 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.07043578055894804 --hidden_size=32 --learning_rate=0.006628015359545694 --num_epochs=30 --num_layers=1 --weight_decay=0.00019734179092140128
+2023-03-24 22:53:16 INFO Running runs: ['irbcrbm9']
+2023-03-24 22:55:20 INFO Cleaning up finished run: irbcrbm9
+2023-03-24 22:55:21 INFO Agent received command: run
+2023-03-24 22:55:21 INFO Agent starting run with config:
+	dropout: 0.1260886638318004
+	hidden_size: 32
+	learning_rate: 0.009608999011247269
+	num_epochs: 60
+	num_layers: 1
+	weight_decay: 0.000284967379344125
+2023-03-24 22:55:21 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.1260886638318004 --hidden_size=32 --learning_rate=0.009608999011247269 --num_epochs=60 --num_layers=1 --weight_decay=0.000284967379344125
+2023-03-24 22:55:26 INFO Running runs: ['6b2xob9e']
+2023-03-24 22:59:04 INFO Cleaning up finished run: 6b2xob9e
+2023-03-24 22:59:04 INFO Agent received command: run
+2023-03-24 22:59:04 INFO Agent starting run with config:
+	dropout: 0.07834290943701455
+	hidden_size: 64
+	learning_rate: 0.008159435648986139
+	num_epochs: 50
+	num_layers: 1
+	weight_decay: 7.497856775131857e-05
+2023-03-24 22:59:04 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.07834290943701455 --hidden_size=64 --learning_rate=0.008159435648986139 --num_epochs=50 --num_layers=1 --weight_decay=7.497856775131857e-05
+2023-03-24 22:59:09 INFO Running runs: ['7t95lmrt']
+2023-03-24 23:02:27 INFO Cleaning up finished run: 7t95lmrt
+2023-03-24 23:02:28 INFO Agent received command: run
+2023-03-24 23:02:28 INFO Agent starting run with config:
+	dropout: 0.1442224141594588
+	hidden_size: 32
+	learning_rate: 0.007081676525234409
+	num_epochs: 50
+	num_layers: 1
+	weight_decay: 0.0001423733493218788
+2023-03-24 23:02:28 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.1442224141594588 --hidden_size=32 --learning_rate=0.007081676525234409 --num_epochs=50 --num_layers=1 --weight_decay=0.0001423733493218788
+2023-03-24 23:02:33 INFO Running runs: ['utb2pczi']
+2023-03-24 23:05:39 INFO Cleaning up finished run: utb2pczi
+2023-03-24 23:05:40 INFO Agent received command: run
+2023-03-24 23:05:40 INFO Agent starting run with config:
+	dropout: 0.0048630381077072295
+	hidden_size: 32
+	learning_rate: 0.005731427246716277
+	num_epochs: 90
+	num_layers: 1
+	weight_decay: 7.26757996119745e-05
+2023-03-24 23:05:40 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.0048630381077072295 --hidden_size=32 --learning_rate=0.005731427246716277 --num_epochs=90 --num_layers=1 --weight_decay=7.26757996119745e-05
+2023-03-24 23:05:45 INFO Running runs: ['w38z1iff']
+2023-03-24 23:11:11 INFO Cleaning up finished run: w38z1iff
+2023-03-24 23:11:12 INFO Agent received command: run
+2023-03-24 23:11:12 INFO Agent starting run with config:
+	dropout: 0.11584082111296884
+	hidden_size: 32
+	learning_rate: 0.0037271115290320577
+	num_epochs: 50
+	num_layers: 1
+	weight_decay: 9.750495494387828e-05
+2023-03-24 23:11:12 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.11584082111296884 --hidden_size=32 --learning_rate=0.0037271115290320577 --num_epochs=50 --num_layers=1 --weight_decay=9.750495494387828e-05
+2023-03-24 23:11:17 INFO Running runs: ['pg2frvvx']
+2023-03-24 23:14:24 INFO Cleaning up finished run: pg2frvvx
+2023-03-24 23:14:24 INFO Agent received command: run
+2023-03-24 23:14:24 INFO Agent starting run with config:
+	dropout: 0.14850709825851868
+	hidden_size: 32
+	learning_rate: 0.005873908207552174
+	num_epochs: 50
+	num_layers: 1
+	weight_decay: 0.0001763296679710979
+2023-03-24 23:14:24 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.14850709825851868 --hidden_size=32 --learning_rate=0.005873908207552174 --num_epochs=50 --num_layers=1 --weight_decay=0.0001763296679710979
+2023-03-24 23:14:29 INFO Running runs: ['6qx3o8gg']
+2023-03-24 23:17:41 INFO Cleaning up finished run: 6qx3o8gg
+2023-03-24 23:17:42 INFO Agent received command: run
+2023-03-24 23:17:42 INFO Agent starting run with config:
+	dropout: 0.07129334312290299
+	hidden_size: 32
+	learning_rate: 0.0029158090064627684
+	num_epochs: 70
+	num_layers: 1
+	weight_decay: 3.1012123732382705e-05
+2023-03-24 23:17:42 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.07129334312290299 --hidden_size=32 --learning_rate=0.0029158090064627684 --num_epochs=70 --num_layers=1 --weight_decay=3.1012123732382705e-05
+2023-03-24 23:17:47 INFO Running runs: ['vurq9sbt']
+2023-03-24 23:22:06 INFO Cleaning up finished run: vurq9sbt
+2023-03-24 23:22:06 INFO Agent received command: run
+2023-03-24 23:22:06 INFO Agent starting run with config:
+	dropout: 0.19548866924608996
+	hidden_size: 32
+	learning_rate: 0.00805136527406818
+	num_epochs: 20
+	num_layers: 1
+	weight_decay: 4.5610437181777384e-05
+2023-03-24 23:22:06 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.19548866924608996 --hidden_size=32 --learning_rate=0.00805136527406818 --num_epochs=20 --num_layers=1 --weight_decay=4.5610437181777384e-05
+2023-03-24 23:22:11 INFO Running runs: ['j2yjyqft']
+2023-03-24 23:23:45 INFO Cleaning up finished run: j2yjyqft
+2023-03-24 23:23:46 INFO Agent received command: run
+2023-03-24 23:23:46 INFO Agent starting run with config:
+	dropout: 0.06296271076695126
+	hidden_size: 32
+	learning_rate: 0.0023318501730454
+	num_epochs: 30
+	num_layers: 1
+	weight_decay: 5.410049340273499e-05
+2023-03-24 23:23:46 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.06296271076695126 --hidden_size=32 --learning_rate=0.0023318501730454 --num_epochs=30 --num_layers=1 --weight_decay=5.410049340273499e-05
+2023-03-24 23:23:51 INFO Running runs: ['9n5cib07']
+2023-03-24 23:25:56 INFO Cleaning up finished run: 9n5cib07
+2023-03-24 23:25:56 INFO Agent received command: run
+2023-03-24 23:25:56 INFO Agent starting run with config:
+	dropout: 0.14653238820563716
+	hidden_size: 32
+	learning_rate: 0.005274454663993649
+	num_epochs: 100
+	num_layers: 1
+	weight_decay: 0.0001847937942742056
+2023-03-24 23:25:56 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.14653238820563716 --hidden_size=32 --learning_rate=0.005274454663993649 --num_epochs=100 --num_layers=1 --weight_decay=0.0001847937942742056
+2023-03-24 23:26:01 INFO Running runs: ['8bebsyjl']
+2023-03-24 23:31:48 INFO Cleaning up finished run: 8bebsyjl
+2023-03-24 23:31:49 INFO Agent received command: run
+2023-03-24 23:31:49 INFO Agent starting run with config:
+	dropout: 0.000923470723196118
+	hidden_size: 32
+	learning_rate: 0.00587440152664643
+	num_epochs: 90
+	num_layers: 1
+	weight_decay: 9.011536725162635e-05
+2023-03-24 23:31:49 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.000923470723196118 --hidden_size=32 --learning_rate=0.00587440152664643 --num_epochs=90 --num_layers=1 --weight_decay=9.011536725162635e-05
+2023-03-24 23:31:54 INFO Running runs: ['qaa246d4']
+2023-03-24 23:37:26 INFO Cleaning up finished run: qaa246d4
+2023-03-24 23:37:26 INFO Agent received command: run
+2023-03-24 23:37:26 INFO Agent starting run with config:
+	dropout: 0.05605600615004196
+	hidden_size: 64
+	learning_rate: 0.0036272150718593063
+	num_epochs: 100
+	num_layers: 1
+	weight_decay: 6.738926283330608e-05
+2023-03-24 23:37:26 INFO About to run command: /usr/bin/env python baseline_model_training_wandb.py --dropout=0.05605600615004196 --hidden_size=64 --learning_rate=0.0036272150718593063 --num_epochs=100 --num_layers=1 --weight_decay=6.738926283330608e-05
+2023-03-24 23:37:31 INFO Running runs: ['bjejhvbn']
+2023-03-24 23:44:37 INFO Cleaning up finished run: bjejhvbn
+2023-03-24 23:44:38 INFO Agent received command: exit
+2023-03-24 23:44:38 INFO Received exit command. Killing runs and quitting.
+2023-03-27 11:30:53 INFO Running runs: []
+2023-03-27 11:30:53 INFO Agent received command: run
+2023-03-27 11:30:53 INFO Agent starting run with config:
+	attn_dropout: 0.37397846995925343
+	d_model: 64
+	depth: 1
+	dim_ff: 256
+	heads: 8
+	learning_rate: 0.007358042247624159
+	num_epochs: 70
+	weight_decay: 0.00017767010436184753
+2023-03-27 11:30:53 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.37397846995925343 --d_model=64 --depth=1 --dim_ff=256 --heads=8 --learning_rate=0.007358042247624159 --num_epochs=70 --weight_decay=0.00017767010436184753
+2023-03-27 11:30:58 INFO Running runs: ['mr32i3qx']
+2023-03-27 11:31:03 INFO Cleaning up finished run: mr32i3qx
+2023-03-27 11:31:10 INFO Agent received command: run
+2023-03-27 11:31:10 INFO Agent starting run with config:
+	attn_dropout: 0.32604932309962176
+	d_model: 32
+	depth: 3
+	dim_ff: 256
+	heads: 8
+	learning_rate: 0.0004758593864328802
+	num_epochs: 100
+	weight_decay: 0.0003041880996307499
+2023-03-27 11:31:10 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.32604932309962176 --d_model=32 --depth=3 --dim_ff=256 --heads=8 --learning_rate=0.0004758593864328802 --num_epochs=100 --weight_decay=0.0003041880996307499
+2023-03-27 11:31:15 INFO Running runs: ['m1wa1lu8']
+2023-03-27 11:31:30 INFO Cleaning up finished run: m1wa1lu8
+2023-03-27 11:31:31 INFO Agent received command: run
+2023-03-27 11:31:31 INFO Agent starting run with config:
+	attn_dropout: 0.4395771062769518
+	d_model: 32
+	depth: 5
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.0015246001483580332
+	num_epochs: 90
+	weight_decay: 3.289713026054653e-05
+2023-03-27 11:31:31 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.4395771062769518 --d_model=32 --depth=5 --dim_ff=128 --heads=4 --learning_rate=0.0015246001483580332 --num_epochs=90 --weight_decay=3.289713026054653e-05
+2023-03-27 11:32:25 INFO Running runs: []
+2023-03-27 11:32:25 INFO Agent received command: run
+2023-03-27 11:32:25 INFO Agent starting run with config:
+	attn_dropout: 0.14898766110741696
+	d_model: 64
+	depth: 5
+	dim_ff: 512
+	heads: 2
+	learning_rate: 0.008500934670022251
+	num_epochs: 20
+	weight_decay: 0.0008434780894906768
+2023-03-27 11:32:25 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.14898766110741696 --d_model=64 --depth=5 --dim_ff=512 --heads=2 --learning_rate=0.008500934670022251 --num_epochs=20 --weight_decay=0.0008434780894906768
+2023-03-27 11:32:30 INFO Running runs: ['g3nfelan']
+2023-03-27 11:36:02 INFO Cleaning up finished run: g3nfelan
+2023-03-27 11:36:08 INFO Agent received command: run
+2023-03-27 11:36:08 INFO Agent starting run with config:
+	attn_dropout: 0.017702564391161135
+	d_model: 128
+	depth: 3
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.00830133333922746
+	num_epochs: 70
+	weight_decay: 0.0009750381218962532
+2023-03-27 11:36:08 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.017702564391161135 --d_model=128 --depth=3 --dim_ff=128 --heads=4 --learning_rate=0.00830133333922746 --num_epochs=70 --weight_decay=0.0009750381218962532
+2023-03-27 11:36:13 INFO Running runs: ['vavnyqyi']
+2023-03-27 11:44:24 INFO Cleaning up finished run: vavnyqyi
+2023-03-27 11:44:24 INFO Agent received command: run
+2023-03-27 11:44:24 INFO Agent starting run with config:
+	attn_dropout: 0.4820691644044045
+	d_model: 32
+	depth: 5
+	dim_ff: 256
+	heads: 4
+	learning_rate: 0.006810972469575727
+	num_epochs: 30
+	weight_decay: 0.00023025929088710696
+2023-03-27 11:44:24 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.4820691644044045 --d_model=32 --depth=5 --dim_ff=256 --heads=4 --learning_rate=0.006810972469575727 --num_epochs=30 --weight_decay=0.00023025929088710696
+2023-03-27 11:44:30 INFO Running runs: ['zvba8eza']
+2023-03-27 11:48:17 INFO Cleaning up finished run: zvba8eza
+2023-03-27 11:48:17 INFO Agent received command: run
+2023-03-27 11:48:17 INFO Agent starting run with config:
+	attn_dropout: 0.07688965585704172
+	d_model: 32
+	depth: 2
+	dim_ff: 64
+	heads: 4
+	learning_rate: 0.009552292527343355
+	num_epochs: 100
+	weight_decay: 0.0001394172960095967
+2023-03-27 11:48:17 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.07688965585704172 --d_model=32 --depth=2 --dim_ff=64 --heads=4 --learning_rate=0.009552292527343355 --num_epochs=100 --weight_decay=0.0001394172960095967
+2023-03-27 11:48:22 INFO Running runs: ['ijlf5cab']
+2023-03-27 11:54:40 INFO Cleaning up finished run: ijlf5cab
+2023-03-27 11:54:40 INFO Agent received command: run
+2023-03-27 11:54:40 INFO Agent starting run with config:
+	attn_dropout: 0.090108752969913
+	d_model: 32
+	depth: 3
+	dim_ff: 32
+	heads: 4
+	learning_rate: 0.007229727819131532
+	num_epochs: 100
+	weight_decay: 0.000345004903553447
+2023-03-27 11:54:40 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.090108752969913 --d_model=32 --depth=3 --dim_ff=32 --heads=4 --learning_rate=0.007229727819131532 --num_epochs=100 --weight_decay=0.000345004903553447
+2023-03-27 11:54:45 INFO Running runs: ['ojkx3bbb']
+2023-03-27 12:02:32 INFO Cleaning up finished run: ojkx3bbb
+2023-03-27 12:02:33 INFO Agent received command: run
+2023-03-27 12:02:33 INFO Agent starting run with config:
+	attn_dropout: 0.08223481300171903
+	d_model: 32
+	depth: 1
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.006081045319695404
+	num_epochs: 100
+	weight_decay: 0.00024023416485099012
+2023-03-27 12:02:33 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.08223481300171903 --d_model=32 --depth=1 --dim_ff=128 --heads=4 --learning_rate=0.006081045319695404 --num_epochs=100 --weight_decay=0.00024023416485099012
+2023-03-27 12:02:38 INFO Running runs: ['e6lwvp39']
+2023-03-27 12:07:39 INFO Cleaning up finished run: e6lwvp39
+2023-03-27 12:07:39 INFO Agent received command: run
+2023-03-27 12:07:39 INFO Agent starting run with config:
+	attn_dropout: 0.030358321050233283
+	d_model: 64
+	depth: 2
+	dim_ff: 256
+	heads: 8
+	learning_rate: 0.006304270878718138
+	num_epochs: 80
+	weight_decay: 8.95068260019186e-05
+2023-03-27 12:07:39 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.030358321050233283 --d_model=64 --depth=2 --dim_ff=256 --heads=8 --learning_rate=0.006304270878718138 --num_epochs=80 --weight_decay=8.95068260019186e-05
+2023-03-27 12:07:44 INFO Running runs: ['dfvo82xm']
+2023-03-27 12:13:36 INFO Cleaning up finished run: dfvo82xm
+2023-03-27 12:13:36 INFO Agent received command: run
+2023-03-27 12:13:36 INFO Agent starting run with config:
+	attn_dropout: 0.06727068150433102
+	d_model: 32
+	depth: 1
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.005909227419990608
+	num_epochs: 90
+	weight_decay: 1.5820500441067147e-05
+2023-03-27 12:13:36 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.06727068150433102 --d_model=32 --depth=1 --dim_ff=128 --heads=4 --learning_rate=0.005909227419990608 --num_epochs=90 --weight_decay=1.5820500441067147e-05
+2023-03-27 12:13:41 INFO Running runs: ['pdtw35rz']
+2023-03-27 12:18:16 INFO Cleaning up finished run: pdtw35rz
+2023-03-27 12:18:16 INFO Agent received command: run
+2023-03-27 12:18:16 INFO Agent starting run with config:
+	attn_dropout: 0.3367887967301192
+	d_model: 32
+	depth: 2
+	dim_ff: 32
+	heads: 4
+	learning_rate: 0.005623674924741481
+	num_epochs: 70
+	weight_decay: 0.0006811538201495088
+2023-03-27 12:18:16 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.3367887967301192 --d_model=32 --depth=2 --dim_ff=32 --heads=4 --learning_rate=0.005623674924741481 --num_epochs=70 --weight_decay=0.0006811538201495088
+2023-03-27 12:18:21 INFO Running runs: ['9peymz0k']
+2023-03-27 12:23:01 INFO Cleaning up finished run: 9peymz0k
+2023-03-27 12:23:02 INFO Agent received command: run
+2023-03-27 12:23:02 INFO Agent starting run with config:
+	attn_dropout: 0.0017337022277723602
+	d_model: 16
+	depth: 1
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.007675934726047863
+	num_epochs: 60
+	weight_decay: 0.0001845389690521079
+2023-03-27 12:23:02 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.0017337022277723602 --d_model=16 --depth=1 --dim_ff=128 --heads=4 --learning_rate=0.007675934726047863 --num_epochs=60 --weight_decay=0.0001845389690521079
+2023-03-27 12:23:07 INFO Running runs: ['sl5onp88']
+2023-03-27 12:26:09 INFO Cleaning up finished run: sl5onp88
+2023-03-27 12:26:09 INFO Agent received command: run
+2023-03-27 12:26:09 INFO Agent starting run with config:
+	attn_dropout: 0.2863920292305048
+	d_model: 32
+	depth: 4
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.008048799758494426
+	num_epochs: 80
+	weight_decay: 0.0007145253722732101
+2023-03-27 12:26:09 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.2863920292305048 --d_model=32 --depth=4 --dim_ff=128 --heads=4 --learning_rate=0.008048799758494426 --num_epochs=80 --weight_decay=0.0007145253722732101
+2023-03-27 12:26:14 INFO Running runs: ['w7hd9ffb']
+2023-03-27 12:34:20 INFO Cleaning up finished run: w7hd9ffb
+2023-03-27 12:34:21 INFO Agent received command: run
+2023-03-27 12:34:21 INFO Agent starting run with config:
+	attn_dropout: 0.03550518775947342
+	d_model: 128
+	depth: 5
+	dim_ff: 64
+	heads: 1
+	learning_rate: 0.001801621110368255
+	num_epochs: 90
+	weight_decay: 0.0001937469409656532
+2023-03-27 12:34:21 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.03550518775947342 --d_model=128 --depth=5 --dim_ff=64 --heads=1 --learning_rate=0.001801621110368255 --num_epochs=90 --weight_decay=0.0001937469409656532
+2023-03-27 12:34:26 INFO Running runs: ['4hly8cyi']
+2023-03-27 12:49:31 INFO Cleaning up finished run: 4hly8cyi
+2023-03-27 12:49:31 INFO Agent received command: run
+2023-03-27 12:49:31 INFO Agent starting run with config:
+	attn_dropout: 0.06110129170343309
+	d_model: 128
+	depth: 5
+	dim_ff: 64
+	heads: 8
+	learning_rate: 0.00026886734386395147
+	num_epochs: 80
+	weight_decay: 0.00039612039595893217
+2023-03-27 12:49:31 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.06110129170343309 --d_model=128 --depth=5 --dim_ff=64 --heads=8 --learning_rate=0.00026886734386395147 --num_epochs=80 --weight_decay=0.00039612039595893217
+2023-03-27 12:49:36 INFO Running runs: ['hd85i484']
+2023-03-27 13:03:10 INFO Cleaning up finished run: hd85i484
+2023-03-27 13:03:12 INFO Agent received command: run
+2023-03-27 13:03:12 INFO Agent starting run with config:
+	attn_dropout: 0.44521198713841326
+	d_model: 32
+	depth: 1
+	dim_ff: 512
+	heads: 1
+	learning_rate: 0.0022547758425447285
+	num_epochs: 90
+	weight_decay: 0.0004978214957777272
+2023-03-27 13:03:12 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.44521198713841326 --d_model=32 --depth=1 --dim_ff=512 --heads=1 --learning_rate=0.0022547758425447285 --num_epochs=90 --weight_decay=0.0004978214957777272
+2023-03-27 13:03:17 INFO Running runs: ['x0n2uffs']
+2023-03-27 13:07:56 INFO Cleaning up finished run: x0n2uffs
+2023-03-27 13:07:57 INFO Agent received command: run
+2023-03-27 13:07:57 INFO Agent starting run with config:
+	attn_dropout: 0.4273025548544237
+	d_model: 64
+	depth: 5
+	dim_ff: 256
+	heads: 2
+	learning_rate: 0.0023342062996712927
+	num_epochs: 60
+	weight_decay: 0.0009692883504012284
+2023-03-27 13:07:57 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.4273025548544237 --d_model=64 --depth=5 --dim_ff=256 --heads=2 --learning_rate=0.0023342062996712927 --num_epochs=60 --weight_decay=0.0009692883504012284
+2023-03-27 13:08:02 INFO Running runs: ['j6i1vljb']
+2023-03-27 13:16:49 INFO Cleaning up finished run: j6i1vljb
+2023-03-27 13:16:50 INFO Agent received command: run
+2023-03-27 13:16:50 INFO Agent starting run with config:
+	attn_dropout: 0.3912762689442621
+	d_model: 16
+	depth: 5
+	dim_ff: 64
+	heads: 8
+	learning_rate: 0.006989623953555507
+	num_epochs: 40
+	weight_decay: 0.0009389982126805128
+2023-03-27 13:16:50 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.3912762689442621 --d_model=16 --depth=5 --dim_ff=64 --heads=8 --learning_rate=0.006989623953555507 --num_epochs=40 --weight_decay=0.0009389982126805128
+2023-03-27 13:16:55 INFO Running runs: ['jytwk91g']
+2023-03-27 13:20:58 INFO Cleaning up finished run: jytwk91g
+2023-03-27 13:20:58 INFO Agent received command: run
+2023-03-27 13:20:58 INFO Agent starting run with config:
+	attn_dropout: 0.019463999558112843
+	d_model: 16
+	depth: 5
+	dim_ff: 32
+	heads: 1
+	learning_rate: 0.007256078515611133
+	num_epochs: 60
+	weight_decay: 2.3907039525439423e-05
+2023-03-27 13:20:58 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.019463999558112843 --d_model=16 --depth=5 --dim_ff=32 --heads=1 --learning_rate=0.007256078515611133 --num_epochs=60 --weight_decay=2.3907039525439423e-05
+2023-03-27 13:21:03 INFO Running runs: ['1qdzqml3']
+2023-03-27 13:26:14 INFO Cleaning up finished run: 1qdzqml3
+2023-03-27 13:26:15 INFO Agent received command: run
+2023-03-27 13:26:15 INFO Agent starting run with config:
+	attn_dropout: 0.4875989616132197
+	d_model: 16
+	depth: 5
+	dim_ff: 32
+	heads: 2
+	learning_rate: 0.005459899893624622
+	num_epochs: 100
+	weight_decay: 0.0007577820859043256
+2023-03-27 13:26:15 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.4875989616132197 --d_model=16 --depth=5 --dim_ff=32 --heads=2 --learning_rate=0.005459899893624622 --num_epochs=100 --weight_decay=0.0007577820859043256
+2023-03-27 13:26:20 INFO Running runs: ['ld2gmuye']
+2023-03-27 13:34:58 INFO Cleaning up finished run: ld2gmuye
+2023-03-27 13:34:58 INFO Agent received command: run
+2023-03-27 13:34:58 INFO Agent starting run with config:
+	attn_dropout: 0.3440059336720035
+	d_model: 16
+	depth: 3
+	dim_ff: 32
+	heads: 4
+	learning_rate: 0.007376058665229278
+	num_epochs: 40
+	weight_decay: 0.0009373824714204556
+2023-03-27 13:34:58 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.3440059336720035 --d_model=16 --depth=3 --dim_ff=32 --heads=4 --learning_rate=0.007376058665229278 --num_epochs=40 --weight_decay=0.0009373824714204556
+2023-03-27 13:35:03 INFO Running runs: ['box8as48']
+2023-03-27 13:37:45 INFO Cleaning up finished run: box8as48
+2023-03-27 13:37:46 INFO Agent received command: run
+2023-03-27 13:37:46 INFO Agent starting run with config:
+	attn_dropout: 0.3360467280431214
+	d_model: 16
+	depth: 3
+	dim_ff: 128
+	heads: 1
+	learning_rate: 0.003364895440415976
+	num_epochs: 50
+	weight_decay: 0.0008848249808486898
+2023-03-27 13:37:46 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.3360467280431214 --d_model=16 --depth=3 --dim_ff=128 --heads=1 --learning_rate=0.003364895440415976 --num_epochs=50 --weight_decay=0.0008848249808486898
+2023-03-27 13:37:51 INFO Running runs: ['l44oc7gk']
+2023-03-27 13:41:23 INFO Cleaning up finished run: l44oc7gk
+2023-03-27 13:41:23 INFO Agent received command: run
+2023-03-27 13:41:23 INFO Agent starting run with config:
+	attn_dropout: 0.014931638826985838
+	d_model: 16
+	depth: 3
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.009813687635694932
+	num_epochs: 30
+	weight_decay: 0.0007438294131039666
+2023-03-27 13:41:23 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.014931638826985838 --d_model=16 --depth=3 --dim_ff=128 --heads=4 --learning_rate=0.009813687635694932 --num_epochs=30 --weight_decay=0.0007438294131039666
+2023-03-27 13:41:28 INFO Running runs: ['v320f8xk']
+2023-03-27 13:43:53 INFO Cleaning up finished run: v320f8xk
+2023-03-27 13:43:54 INFO Agent received command: run
+2023-03-27 13:43:54 INFO Agent starting run with config:
+	attn_dropout: 0.4686910962592635
+	d_model: 32
+	depth: 3
+	dim_ff: 512
+	heads: 4
+	learning_rate: 0.008333924082119724
+	num_epochs: 30
+	weight_decay: 0.0002901580380549037
+2023-03-27 13:43:54 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.4686910962592635 --d_model=32 --depth=3 --dim_ff=512 --heads=4 --learning_rate=0.008333924082119724 --num_epochs=30 --weight_decay=0.0002901580380549037
+2023-03-27 13:43:59 INFO Running runs: ['wycbdyow']
+2023-03-27 13:46:44 INFO Cleaning up finished run: wycbdyow
+2023-03-27 13:46:45 INFO Agent received command: run
+2023-03-27 13:46:45 INFO Agent starting run with config:
+	attn_dropout: 0.07494624854206844
+	d_model: 64
+	depth: 2
+	dim_ff: 512
+	heads: 4
+	learning_rate: 0.009559386414454444
+	num_epochs: 100
+	weight_decay: 0.0003362322890898331
+2023-03-27 13:46:45 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.07494624854206844 --d_model=64 --depth=2 --dim_ff=512 --heads=4 --learning_rate=0.009559386414454444 --num_epochs=100 --weight_decay=0.0003362322890898331
+2023-03-27 13:46:50 INFO Running runs: ['hoczr5hc']
+2023-03-27 13:54:30 INFO Cleaning up finished run: hoczr5hc
+2023-03-27 13:54:31 INFO Agent received command: run
+2023-03-27 13:54:31 INFO Agent starting run with config:
+	attn_dropout: 0.21800329803790677
+	d_model: 32
+	depth: 1
+	dim_ff: 128
+	heads: 8
+	learning_rate: 0.008884173162528179
+	num_epochs: 100
+	weight_decay: 0.0003161199359986416
+2023-03-27 13:54:31 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.21800329803790677 --d_model=32 --depth=1 --dim_ff=128 --heads=8 --learning_rate=0.008884173162528179 --num_epochs=100 --weight_decay=0.0003161199359986416
+2023-03-27 13:54:36 INFO Running runs: ['yzw6wi73']
+2023-03-27 13:59:47 INFO Cleaning up finished run: yzw6wi73
+2023-03-27 13:59:47 INFO Agent received command: run
+2023-03-27 13:59:47 INFO Agent starting run with config:
+	attn_dropout: 0.09198550408781048
+	d_model: 128
+	depth: 4
+	dim_ff: 128
+	heads: 8
+	learning_rate: 0.0010040916932569596
+	num_epochs: 70
+	weight_decay: 0.00025788341548651735
+2023-03-27 13:59:47 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.09198550408781048 --d_model=128 --depth=4 --dim_ff=128 --heads=8 --learning_rate=0.0010040916932569596 --num_epochs=70 --weight_decay=0.00025788341548651735
+2023-03-27 13:59:52 INFO Running runs: ['60ckoyvw']
+2023-03-27 14:10:08 INFO Cleaning up finished run: 60ckoyvw
+2023-03-27 14:10:08 INFO Agent received command: run
+2023-03-27 14:10:08 INFO Agent starting run with config:
+	attn_dropout: 0.024437790851131513
+	d_model: 128
+	depth: 3
+	dim_ff: 128
+	heads: 4
+	learning_rate: 0.00689880577482688
+	num_epochs: 100
+	weight_decay: 0.0002649836332934342
+2023-03-27 14:10:08 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.024437790851131513 --d_model=128 --depth=3 --dim_ff=128 --heads=4 --learning_rate=0.00689880577482688 --num_epochs=100 --weight_decay=0.0002649836332934342
+2023-03-27 14:10:13 INFO Running runs: ['l4g19w9g']
+2023-03-27 14:22:33 INFO Cleaning up finished run: l4g19w9g
+2023-03-27 14:22:34 INFO Agent received command: run
+2023-03-27 14:22:34 INFO Agent starting run with config:
+	attn_dropout: 0.01496100817067969
+	d_model: 128
+	depth: 3
+	dim_ff: 128
+	heads: 8
+	learning_rate: 0.00756724701047631
+	num_epochs: 70
+	weight_decay: 0.00031788907222274094
+2023-03-27 14:22:34 INFO About to run command: /usr/bin/env python FTT_model_training_wandb.py --attn_dropout=0.01496100817067969 --d_model=128 --depth=3 --dim_ff=128 --heads=8 --learning_rate=0.00756724701047631 --num_epochs=70 --weight_decay=0.00031788907222274094
+2023-03-27 14:22:39 INFO Running runs: ['7wdsvi3o']
+2023-03-27 14:31:06 INFO Cleaning up finished run: 7wdsvi3o
+2023-03-27 14:31:06 INFO Agent received command: exit
+2023-03-27 14:31:06 INFO Received exit command. Killing runs and quitting.

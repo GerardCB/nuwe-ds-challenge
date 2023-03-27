@@ -1,0 +1,28 @@
+2023-03-24 17:34:00,144 INFO    MainThread:25358 [wandb_setup.py:_flush():76] Configure stats pid to 25358
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/.config/wandb/settings
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/settings
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'gerardcb', 'project': 'nuwe-model', 'sweep_id': 'ojemwr5u', 'root_dir': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model', 'run_id': 'o92rfxud', 'sweep_param_path': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/sweep-ojemwr5u/config-o92rfxud.yaml'}
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'model/baseline_model_training_wandb.py', 'program': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/baseline_model_training_wandb.py'}
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_init.py:_log_setup():506] Logging user logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_173400-o92rfxud/logs/debug.log
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_init.py:_log_setup():507] Logging internal logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_173400-o92rfxud/logs/debug-internal.log
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_init.py:init():546] calling init triggers
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_init.py:init():552] wandb.init called with sweep_config: {'dropout': 0.11367909469680414, 'hidden_size': 128, 'learning_rate': 0.0008598849436225637, 'num_epochs': 100, 'num_layers': 3, 'weight_decay': 0.0009978880186568063}
+config: {}
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_init.py:init():602] starting backend
+2023-03-24 17:34:00,145 INFO    MainThread:25358 [wandb_init.py:init():606] setting up manager
+2023-03-24 17:34:00,157 INFO    MainThread:25358 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-24 17:34:00,168 INFO    MainThread:25358 [wandb_init.py:init():613] backend started and connected
+2023-03-24 17:34:00,181 INFO    MainThread:25358 [wandb_run.py:_config_callback():1251] config_cb None None {'dropout': 0.11367909469680414, 'hidden_size': 128, 'learning_rate': 0.0008598849436225637, 'num_epochs': 100, 'num_layers': 3, 'weight_decay': 0.0009978880186568063}
+2023-03-24 17:34:00,182 INFO    MainThread:25358 [wandb_init.py:init():701] updated telemetry
+2023-03-24 17:34:00,193 INFO    MainThread:25358 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-24 17:34:00,623 INFO    MainThread:25358 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-24 17:34:00,710 INFO    MainThread:25358 [wandb_run.py:_on_init():2142] got version response 
+2023-03-24 17:34:00,711 INFO    MainThread:25358 [wandb_init.py:init():789] starting run threads in backend
+2023-03-24 17:34:06,712 INFO    MainThread:25358 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-24 17:34:06,713 INFO    MainThread:25358 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-24 17:34:06,713 INFO    MainThread:25358 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-24 17:34:06,714 INFO    MainThread:25358 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-24 17:34:06,715 INFO    MainThread:25358 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-24 17:34:06,716 INFO    MainThread:25358 [wandb_run.py:_config_callback():1251] config_cb None None {'batch_size': 32}
+2023-03-24 17:37:51,718 WARNING MsgRouterThr:25358 [router.py:message_loop():77] message_loop has been closed

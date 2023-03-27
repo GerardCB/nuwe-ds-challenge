@@ -1,0 +1,50 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.14.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.10
+    start_time: 1679680972.868599
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 23
+      - 37
+      4: 3.10.10
+      5: 0.14.0
+      8:
+      - 5
+batch_size:
+  desc: null
+  value: 32
+dropout:
+  desc: null
+  value: 0.029123823566111807
+hidden_size:
+  desc: null
+  value: 512
+learning_rate:
+  desc: null
+  value: 0.007052593175415844
+num_epochs:
+  desc: null
+  value: 80
+num_layers:
+  desc: null
+  value: 3
+weight_decay:
+  desc: null
+  value: 0.0009725767380803988

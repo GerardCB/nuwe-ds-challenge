@@ -1,0 +1,27 @@
+2023-03-24 22:26:37,753 INFO    MainThread:28677 [wandb_setup.py:_flush():76] Configure stats pid to 28677
+2023-03-24 22:26:37,753 INFO    MainThread:28677 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/.config/wandb/settings
+2023-03-24 22:26:37,753 INFO    MainThread:28677 [wandb_setup.py:_flush():76] Loading settings from /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/settings
+2023-03-24 22:26:37,753 INFO    MainThread:28677 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'gerardcb', 'project': 'nuwe-model', 'sweep_id': '7nqh6em3', 'root_dir': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model', 'run_id': '2199eysq', 'sweep_param_path': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/sweep-7nqh6em3/config-2199eysq.yaml'}
+2023-03-24 22:26:37,753 INFO    MainThread:28677 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-24 22:26:37,753 INFO    MainThread:28677 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'model/baseline_model_training_wandb.py', 'program': '/home/usuaris/veu/gerard.calvo.bartra/nuwe/model/baseline_model_training_wandb.py'}
+2023-03-24 22:26:37,754 INFO    MainThread:28677 [wandb_init.py:_log_setup():506] Logging user logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_222637-2199eysq/logs/debug.log
+2023-03-24 22:26:37,754 INFO    MainThread:28677 [wandb_init.py:_log_setup():507] Logging internal logs to /home/usuaris/veu/gerard.calvo.bartra/nuwe/model/wandb/run-20230324_222637-2199eysq/logs/debug-internal.log
+2023-03-24 22:26:37,754 INFO    MainThread:28677 [wandb_init.py:init():546] calling init triggers
+2023-03-24 22:26:37,754 INFO    MainThread:28677 [wandb_init.py:init():552] wandb.init called with sweep_config: {'dropout': 0.7910692334579779, 'hidden_size': 128, 'learning_rate': 0.003821056096426128, 'num_epochs': 60, 'num_layers': 5, 'weight_decay': 0.0006771598815868295}
+config: {}
+2023-03-24 22:26:37,754 INFO    MainThread:28677 [wandb_init.py:init():602] starting backend
+2023-03-24 22:26:37,754 INFO    MainThread:28677 [wandb_init.py:init():606] setting up manager
+2023-03-24 22:26:37,765 INFO    MainThread:28677 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-24 22:26:37,775 INFO    MainThread:28677 [wandb_init.py:init():613] backend started and connected
+2023-03-24 22:26:37,787 INFO    MainThread:28677 [wandb_run.py:_config_callback():1251] config_cb None None {'dropout': 0.7910692334579779, 'hidden_size': 128, 'learning_rate': 0.003821056096426128, 'num_epochs': 60, 'num_layers': 5, 'weight_decay': 0.0006771598815868295}
+2023-03-24 22:26:37,788 INFO    MainThread:28677 [wandb_init.py:init():701] updated telemetry
+2023-03-24 22:26:37,799 INFO    MainThread:28677 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-24 22:26:38,242 INFO    MainThread:28677 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-24 22:26:38,422 INFO    MainThread:28677 [wandb_run.py:_on_init():2142] got version response 
+2023-03-24 22:26:38,422 INFO    MainThread:28677 [wandb_init.py:init():789] starting run threads in backend
+2023-03-24 22:26:44,469 INFO    MainThread:28677 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-24 22:26:44,469 INFO    MainThread:28677 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-24 22:26:44,470 INFO    MainThread:28677 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-24 22:26:44,470 INFO    MainThread:28677 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-24 22:26:44,471 INFO    MainThread:28677 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-24 22:26:44,472 INFO    MainThread:28677 [wandb_run.py:_config_callback():1251] config_cb None None {'batch_size': 32}

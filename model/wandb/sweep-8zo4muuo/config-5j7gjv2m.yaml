@@ -1,0 +1,14 @@
+wandb_version: 1
+
+dropout:
+  value: 0.01845526710391132
+hidden_size:
+  value: 32
+learning_rate:
+  value: 0.00958176943703362
+num_epochs:
+  value: 100
+num_layers:
+  value: 1
+weight_decay:
+  value: 0.0004916212641284944
