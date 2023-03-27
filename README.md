@@ -34,7 +34,7 @@ Smoothed F1 Score Loss is a continuous variation of F1 score that allows probabi
 | Baseline fine-tuned | 0.8646 | ...  | ... |
 | FT Transformer      | 0.8036 | 0.8055 | 0.7473 |
 
-The best model from the ones trained is the finetuned version of the FT Tansformer using BCE Loss on the raw dataset. Its test predictions can be accessed [here](./data/ftt_model_finetuned_2_raw_predictions.json).
+The best model from the ones trained is the finetuned version of the FT Tansformer using BCE Loss on the raw dataset. Its test predictions can be accessed [here](./predictions.json).
 
 * The baseline models were initilised using a random configuration.
 * All fine-tuning was made using Weights & Biases (W&B) sweeps.
