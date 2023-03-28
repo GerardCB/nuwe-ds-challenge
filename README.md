@@ -10,8 +10,8 @@ The models used are:
 
 The datasets used are the ones resulting from the [data exploration notebook](./scripts/data_exploration.ipynb). One can check such notebook for further details on the dataset generation process:
 - `raw`: the original train dataset.
-- `cleaned`: the original dataset, but removing variables that had no correlation to the target __Attrition_Flag__ variable.
-- `balanced`: a variation of the __cleaned__ dataset, where the number of positive and negative __Attrition_Flag__ was more balanced. The data balancing was produced via sampling (upsampling and downsampling).
+- `cleaned`: the original dataset, but removing variables that had no correlation to the target ___Attrition_Flag___ variable.
+- `balanced`: a variation of the ___cleaned___ dataset, where the number of positive and negative ___Attrition_Flag___ was more balanced. The data balancing was produced via sampling (upsampling and downsampling).
 
 ### models - datasets (trained on BCE Loss)
 
@@ -33,6 +33,8 @@ Smoothed F1 Score Loss is a continuous variation of F1 score that allows probabi
 | Baseline            | 0.8579 | 0.8568 | 0.7372 |
 | Baseline fine-tuned | 0.8646 | ...  | ... |
 | FT Transformer      | 0.8036 | 0.8055 | 0.7473 |
+
+-----
 
 The best model from the ones trained is the finetuned version of the FT Tansformer using BCE Loss on the raw dataset. Its test predictions can be accessed [here](./predictions.json).
 
