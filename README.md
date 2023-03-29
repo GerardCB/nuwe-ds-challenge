@@ -45,7 +45,7 @@ The best model from the ones trained is the finetuned version of the FT Tansform
 
 ## Future work
 
-I believe that adding an embedding layer to the FT Transformer model would yield a higher testing F1 score, since the model will be able to capture and contextualize better the data, compared to a simple one-hot vector. Therefore, as future work adding this extra embedidng layer should be tested.
+I believe that adding an embedding layer to the categorical variables in the FT Transformer model would yield a higher testing F1 score, since the model will be able to capture and contextualize better the data, compared to a simple one-hot vector. Therefore, as future work adding this extra embedidng layer should be tested.
 
 Additionally, all the fine-tuned models should be filled out in the model comparison benchmark. I had problems version compatibility problems of Pytorch and CUDA, and I could not use GPU for training. As the fine-tuning consumes a lot of resources (several training are performed), I could not fine-tune all the models.
 
